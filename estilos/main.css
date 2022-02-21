@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes, .container-fluid .contenido3 .cajaClientes .avance .clientes, .container-fluid .contenido3 .cajaClientes .sublitex .clientes, .container-fluid .contenido3 .cajaClientes .radiante .clientes {
-  background: rgba(75, 75, 255, 0.719);
+  background: rgba(74, 74, 74, 0.302);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,13 +51,13 @@
 
 .container-fluid .contenido2 .cajaPadre .caja1, .container-fluid .contenido2 .cajaPadre .caja2, .container-fluid .contenido2 .cajaPadre .caja3, .container-fluid .contenido2 .cajaPadre .caja4 {
   display: flex;
-  background-color: rgba(99, 166, 253, 0.302);
+  background-color: rgba(75, 75, 255, 0.719);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
 
 .container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .textoDeCajas {
   margin: 0% 10% 0% 10%;
   text-align: center;
-  color: #8b8b8b;
+  color: black;
   font-size: calc(0.2em + 1vw);
   margin-bottom: 2%; }
 
@@ -74,7 +74,7 @@ header .navbar {
   position: fixed;
   width: 100%;
   z-index: 200;
-  background-color: #4b4bff;
+  background-color: #5959c3;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
   header .navbar .container-fluid .navbar-brand {
     width: 8%;
@@ -180,7 +180,7 @@ footer {
   grid-area: footer;
   padding: 10px;
   align-items: center;
-  background-color: #4b4bff;
+  background-color: #5959c3;
   display: flex;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
@@ -254,7 +254,7 @@ ESTILOS PAGE NOSOTROS
           text-align: start;
           margin: 0 5% 0 5%; }
     .container-fluid .main1 .fondoTexturado {
-      background-color: rgba(75, 75, 255, 0.719);
+      background-color: rgba(74, 74, 134, 0.719);
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       width: 100%;
       padding: 5% 0 5% 0;
@@ -600,7 +600,7 @@ ESTILOS PAGE SERVICIOS
       font-size: calc(0.8em + 1vw); }
   .container-fluid .contenido4 .cajaRedes {
     grid-area: cajaRedes;
-    background-color: #bbbbff;
+    background-color: rgba(74, 74, 74, 0.302);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
     .container-fluid .contenido4 .cajaRedes .tituloRedes {
       margin: 3%;
@@ -632,7 +632,7 @@ ESTILOS PAGE SERVICIOS
     align-items: center;
     margin: 5%; }
     .container-fluid .contenido4 .cajaFormulario .formulario {
-      background-color: #bbbbff;
+      background-color: rgba(74, 74, 134, 0.719);
       align-items: center;
       width: 50%;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

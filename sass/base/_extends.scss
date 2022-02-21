@@ -3,7 +3,7 @@
 //extends son aplicados a la page portafolio
 
 %fondo-cliente{
-    background: rgba(75, 75, 255, 0.719);
+    background: $gris-fondo;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,14 +60,14 @@
 //extends aplicados a servicios
 %cajas-general{
     display: flex;
-    background-color: hsla(214, 97%, 69%, 0.302);
+    background-color: rgba(75, 75, 255, 0.719);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 %text-servicios{
     margin: $margin-titulo;
     text-align: center;
-    color: rgb(139, 139, 139);
+    color: $text-black;
     font-size: calc(0.2em + 1vw);
     margin-bottom: 2%;
 }
