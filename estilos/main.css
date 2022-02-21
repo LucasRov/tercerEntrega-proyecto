@@ -601,12 +601,16 @@ ESTILOS PAGE SERVICIOS
             .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3:hover {
               width: 45%; } }
 
+/*--------------------------------------------------------
+ESTILOS CONTACTO
+--------------------------------------------------------*/
 .container-fluid .contenido4 {
   grid-area: main;
   display: grid;
   min-height: 50em;
   grid-template-areas: "tituloContacto" "cajaRedes" "cajaFormulario";
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  /*ESTILOS FORMULARIO*/ }
   .container-fluid .contenido4 .tituloContacto {
     grid-area: tituloContacto; }
     .container-fluid .contenido4 .tituloContacto p {

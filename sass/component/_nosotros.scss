@@ -14,7 +14,7 @@ ESTILOS PAGE NOSOTROS
             margin-bottom: 40px;
             @media screen and (max-width:768px){
                 margin: 10%;
-                }
+            }
         }
         .historia{
             display: flex;
@@ -63,7 +63,7 @@ ESTILOS PAGE NOSOTROS
             @media screen and (max-width:768px) {
                 padding-top: 2%;
             }
-                .titulo3{
+            .titulo3{
                 grid-area: titulo3;
                 font-size: calc(1.2em + 1vw);
                 margin: 0% 0 3% 0;
@@ -71,7 +71,7 @@ ESTILOS PAGE NOSOTROS
                 @media screen and (max-width:768px){
                     margin: 5%;
                 }
-                }
+            }
             .carruselPersonal{
                 width: 100%;
                 display: none;
@@ -106,8 +106,8 @@ ESTILOS PAGE NOSOTROS
                         margin: 1%;
                     }
                     .nombreSector{
-                            color: aqua;
-                            font-size: 800px;
+                        color: aqua;
+                        font-size: 800px;
                     }    
                 }
             }

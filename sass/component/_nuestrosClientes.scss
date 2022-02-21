@@ -97,7 +97,6 @@
                     color: black
                 }
                 .clientes{
-                   
                     @extend%fondo-cliente;
                     @extend%media-clientes;
                     p{
@@ -111,7 +110,6 @@
                                 width: 40%;
                             }
                         }
-                        
                         .img2{
                             margin: 0 5% 13% 0;
                             @extend%imagen-secundaria;
@@ -126,7 +124,6 @@
                                 }
                             } 
                         }
-                        
                         .img3{
                             margin: 13% 0 0% 0%;
                             @extend%imagen-secundaria;
@@ -163,7 +160,6 @@
                                 width: 40%;
                             }
                         }
-                        
                         .img2{
                             margin: 0 5% 13% 0;
                             @extend%imagen-secundaria;
@@ -191,8 +187,7 @@
                                     width: 45%;
                                 }
                             }
-                        }
-                        
+                        } 
                     }
                 }
             }

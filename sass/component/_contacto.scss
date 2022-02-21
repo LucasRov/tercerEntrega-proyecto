@@ -1,5 +1,9 @@
 
 
+/*--------------------------------------------------------
+ESTILOS CONTACTO
+--------------------------------------------------------*/
+
 .container-fluid{
     .contenido4{
         grid-area: main;
@@ -51,11 +55,14 @@
                         width: 30%;
                         @media screen and (max-width:768px){
                             width: 40%;
-                            }
+                        }
                     }
                 }
             }
         }
+
+        /*ESTILOS FORMULARIO*/
+
         .cajaFormulario{
             grid-area: cajaFormulario;
             display: flex;
@@ -73,9 +80,6 @@
                 @media screen and (max-width:768px){
                     margin-top: 5%;
                     width: 100%;
-                }
-                @media screen and (max-width:480px){
-                   
                 }
                 .tituloFormulario{
                     color: $text-black;
