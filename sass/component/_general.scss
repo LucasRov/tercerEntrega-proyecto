@@ -140,7 +140,12 @@ body{
                 margin: 3% 20% 10% 20%;
                 text-align: center;
                 font-size: calc(0.3em + 1vw);
-            }
+                font-size: calc(0.4em + 1vw);
+                @media screen and (max-width:768px){
+                    font-size: 1rem;
+                    margin: 2% 5% 5% 5%;
+                }
+                        }
         }
     }
 }

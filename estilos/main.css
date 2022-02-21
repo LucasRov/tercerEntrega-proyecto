@@ -58,8 +58,11 @@
   margin: 0% 10% 0% 10%;
   text-align: center;
   color: black;
-  font-size: calc(0.2em + 1vw);
-  margin-bottom: 2%; }
+  font-size: calc(0.4em + 1vw); }
+  @media screen and (max-width: 768px) {
+    .container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .textoDeCajas {
+      width: 80%;
+      font-size: 1rem; } }
 
 .container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .tituloCaja {
   margin: 2% 0% 3% 0%;
@@ -171,7 +174,12 @@ body {
         color: black;
         margin: 3% 20% 10% 20%;
         text-align: center;
-        font-size: calc(0.3em + 1vw); }
+        font-size: calc(0.3em + 1vw);
+        font-size: calc(0.4em + 1vw); }
+        @media screen and (max-width: 768px) {
+          body .container-fluid main .subtitulo {
+            font-size: 1rem;
+            margin: 2% 5% 5% 5%; } }
 
 /*--------------------------------------------------------
 ESTILOS GENERALES. FOOTER
@@ -198,9 +206,6 @@ ESTILOS INDEX
 --------------------------------------------------------*/
 .container-fluid main .videosPresentacion > video {
   width: 100%; }
-  @media screen and (max-width: 768px) {
-    .container-fluid main .videosPresentacion > video {
-      margin-top: 0px; } }
 
 .container-fluid main #tituloPrincipal {
   position: relative;
@@ -225,6 +230,9 @@ ESTILOS PAGE NOSOTROS
       grid-area: titulo2;
       font-size: calc(1.2em + 1vw);
       margin-bottom: 40px; }
+      @media screen and (max-width: 768px) {
+        .container-fluid .main1 .titulo2 {
+          margin: 10%; } }
     .container-fluid .main1 .historia {
       display: flex;
       justify-content: space-between;
@@ -252,7 +260,12 @@ ESTILOS PAGE NOSOTROS
           font-size: calc(0.3em + 1vw);
           color: #8b8b8b;
           text-align: start;
-          margin: 0 5% 0 5%; }
+          margin: 5%; }
+          @media screen and (max-width: 768px) {
+            .container-fluid .main1 .historia .cajaTextosNosotros p {
+              width: 80%;
+              font-size: 1em;
+              text-align: center; } }
     .container-fluid .main1 .fondoTexturado {
       background-color: rgba(74, 74, 134, 0.719);
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -262,12 +275,15 @@ ESTILOS PAGE NOSOTROS
       background-size: cover; }
       @media screen and (max-width: 768px) {
         .container-fluid .main1 .fondoTexturado {
-          padding-top: 20%; } }
+          padding-top: 2%; } }
       .container-fluid .main1 .fondoTexturado .titulo3 {
         grid-area: titulo3;
         font-size: calc(1.2em + 1vw);
         margin: 0% 0 3% 0;
         color: black; }
+        @media screen and (max-width: 768px) {
+          .container-fluid .main1 .fondoTexturado .titulo3 {
+            margin: 5%; } }
       .container-fluid .main1 .fondoTexturado .carruselPersonal {
         width: 100%;
         display: none; }
@@ -623,8 +639,14 @@ ESTILOS PAGE SERVICIOS
         flex-direction: column;
         align-items: center;
         margin: 2%; }
+        @media screen and (max-width: 768px) {
+          .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes {
+            font-size: 0.8em; } }
         .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes img {
           width: 30%; }
+          @media screen and (max-width: 768px) {
+            .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes img {
+              width: 40%; } }
   .container-fluid .contenido4 .cajaFormulario {
     grid-area: cajaFormulario;
     display: flex;
@@ -654,6 +676,9 @@ ESTILOS PAGE SERVICIOS
             margin: 5%; } }
       .container-fluid .contenido4 .cajaFormulario .formulario fieldset label {
         font-size: calc(0.4em + 1vw); }
+        @media screen and (max-width: 768px) {
+          .container-fluid .contenido4 .cajaFormulario .formulario fieldset label {
+            font-size: 1em; } }
       .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente {
         display: flex;
         align-items: center; }
@@ -663,6 +688,9 @@ ESTILOS PAGE SERVICIOS
         .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
           margin: 3% 4% 3% 0%;
           font-size: calc(0.1em + 1vw); }
+          @media screen and (max-width: 768px) {
+            .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
+              font-size: 1em; } }
         .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente select {
           margin-left: 4%; }
       .container-fluid .contenido4 .cajaFormulario .formulario fieldset .textarea {

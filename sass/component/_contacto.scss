@@ -44,8 +44,14 @@
                     flex-direction: column;
                     align-items:center; 
                     margin: 2%;
+                    @media screen and (max-width:768px){
+                        font-size: 0.8em
+                        }
                     img{
                         width: 30%;
+                        @media screen and (max-width:768px){
+                            width: 40%;
+                            }
                     }
                 }
             }
@@ -84,6 +90,9 @@
                 fieldset{
                     label{
                         font-size: calc(0.4em + 1vw);
+                        @media screen and (max-width:768px){
+                            font-size: 1em;
+                        }
                     }
                     .tipoCliente{
                         display: flex;
@@ -94,6 +103,9 @@
                         .textoTipo{
                             margin: 3% 4% 3% 0%;
                             font-size: calc(0.1em + 1vw);
+                            @media screen and (max-width:768px){
+                                font-size: 1em;
+                            }
                         }
                         select{
                             margin-left: 4%;

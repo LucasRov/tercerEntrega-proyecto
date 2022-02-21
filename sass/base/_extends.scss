@@ -68,8 +68,11 @@
     margin: $margin-titulo;
     text-align: center;
     color: $text-black;
-    font-size: calc(0.2em + 1vw);
-    margin-bottom: 2%;
+    font-size: calc(0.4em + 1vw);
+    @media screen and (max-width:768px){
+        width: 80%;
+        font-size: 1rem;
+    }
 }
 
 %prop-titulo{

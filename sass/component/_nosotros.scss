@@ -12,6 +12,9 @@ ESTILOS PAGE NOSOTROS
             grid-area: titulo2;
             font-size: calc(1.2em + 1vw);
             margin-bottom: 40px;
+            @media screen and (max-width:768px){
+                margin: 10%;
+                }
         }
         .historia{
             display: flex;
@@ -41,7 +44,12 @@ ESTILOS PAGE NOSOTROS
                     font-size: calc(0.3em + 1vw);
                     color: rgb(139, 139, 139);
                     text-align: start;
-                    margin: 0 5% 0 5%;
+                    margin:5%;
+                    @media screen and (max-width:768px){
+                        width: 80%;
+                        font-size: 1em;
+                        text-align: center;
+                    }
                 }
             } 
         }
@@ -53,13 +61,16 @@ ESTILOS PAGE NOSOTROS
             background-repeat: no-repeat;
             background-size: cover;
             @media screen and (max-width:768px) {
-                padding-top: 20%;
+                padding-top: 2%;
             }
                 .titulo3{
                 grid-area: titulo3;
                 font-size: calc(1.2em + 1vw);
                 margin: 0% 0 3% 0;
                 color: black;
+                @media screen and (max-width:768px){
+                    margin: 5%;
+                }
                 }
             .carruselPersonal{
                 width: 100%;
