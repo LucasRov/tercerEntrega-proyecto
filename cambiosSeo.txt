@@ -1,0 +1,41 @@
+
+
+
+Detalle de cambios referidos a SEO.
+
+----CAMBIOS GENERALES----
+
+-Se agregan "descripcion" y "keywords en todos los HTML.
+-A los subtítulos que tenían etiqueta "h2" se los cambio por "p" porque los textos eran extensos.
+-Se colocan "h2" a otros títulos.
+-Se ordenan las etiquetas "h" siguiendo el orden correspondiente. (h1, h2, h3, etc.).
+
+
+-----INDEX---
+
+<meta name="descripcion" content="Te ayudamos a potenciar el valor del negocio, a través desarrollo de estrategias creativas innovadoras y visualmente atractivas.Contamos con los mejores profesionales en Marketing y publicidad.">
+<meta name="keywords" content="Linear, diseño, branding, fotografía, marca, publicidad, página web, producto, redes sociales, logos, ventas, posicionamiento."> 
+-En title se cambia "home-linear" por "Linear - Estudio gráfico".
+
+----NOSOTROS---
+
+<meta name="descripcion" content=">Somos un conjunto de profesionales, especializados en desarrollo de branding, planes de marketing, posicionamiento y publicidad.">
+<meta name="keywords" content="Linear,diseño, branding, fotografía, marca, publicidad, página web, producto, redes sociales, logos, ventas, posicionamiento, experiencia,profesionales."> 
+
+
+----SERVICIOS----
+
+<meta name="descripcion" content="Ofrecemos principalmente los servicios de branding, marketing digital, diseño web y fotografía.">
+<meta name="keywords" content="Linear, diseño, branding, fotografía, marca, publicidad, contacto, sugerencias, presupuesto, plan de marketing, producto, redes sociales, logos, ventas, posicionamiento."> 
+
+
+----PORTAFOLIO----
+-Se cambia el nombre como el título de la page "portafolio" por el de "nuestros clientes".
+
+<meta name="descripcion" content="Te ayudamos a potenciar el valor del negocio, a través desarrollo de estrategias creativas innovadoras y visualmente atractivas.Contamos con los mejores profesionales en Marketing y publicidad.">
+<meta name="keywords" content="Linear,clientes,confianza,diseño, branding, fotografía, marca, publicidad, página web, producto, redes sociales, logos, ventas, posicionamiento."> 
+
+----CONTACTO----
+
+<meta name="descripcion" content="Contanos en que podemos ayudarte. Te enviamos un presupuesto con nuestro planes sugeridos para potenciar al máximo tu empresa y/o producto">
+<meta name="keywords" content="Linear, diseño, branding, fotografía, marca, publicidad, contacto, sugerencias, potenciar, presupuesto, plan de marketing, producto, redes sociales, logos, ventas, posicionamiento."> 

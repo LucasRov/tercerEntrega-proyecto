@@ -1,0 +1,135 @@
+
+
+.container-fluid{
+    .contenido4{
+        grid-area: main;
+        display: grid;
+        min-height: 50em;
+        grid-template-areas: "tituloContacto"
+                                "cajaRedes"
+                                "cajaFormulario";
+        grid-template-columns: 1fr ; 
+        .tituloContacto{
+            grid-area: tituloContacto;
+                p{
+                    color: $text-black;
+                    text-align: center;
+                    margin: 5%;
+                    font-size: calc(0.8em + 1vw);;
+                }
+        }   
+        .cajaRedes{
+            grid-area: cajaRedes;
+            background-color: $background-contacto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .tituloRedes{
+                margin: 3%;
+                font-size: calc(0.8em + 1vw);
+            }
+            .cajaLogos{
+                display: flex;
+                justify-content: center;
+                margin: 3%;
+                width: 30%;
+                margin-left: 35%;
+                @media screen and (max-width:768px){
+                    display: flex;
+                    flex-direction: column;
+                }
+                .logoRedes{
+                    text-decoration: none;
+                    color: $text-black;
+                    font-size: calc(0.3em + 1vw);
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center; 
+                    margin: 2%;
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        .cajaFormulario{
+            grid-area: cajaFormulario;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5%;
+            .formulario{
+                background-color: $background-contacto;
+                align-items: center;
+                width: 50%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius: 20px;
+                padding: 2%;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                @media screen and (max-width:768px){
+                    margin-top: 5%;
+                    width: 100%;
+                }
+                @media screen and (max-width:480px){
+                   
+                }
+                .tituloFormulario{
+                    color: $text-black;
+                    margin-bottom: 3%;
+                    font-weight: 200;
+                    font-size: calc(0.6em + 1vw);
+                    text-align: center;
+                    @media screen and (max-width:768px){
+                        margin: 5%;
+                    }
+                }
+                fieldset{
+                    label{
+                        font-size: calc(0.4em + 1vw);
+                    }
+                    .tipoCliente{
+                        display: flex;
+                        align-items: center;                   
+                        @media screen and (max-width:480px){
+                            margin: 2% 0 5% 0;
+                        }
+                        .textoTipo{
+                            margin: 3% 4% 3% 0%;
+                            font-size: calc(0.1em + 1vw);
+                        }
+                        select{
+                            margin-left: 4%;
+                        }
+                    }
+                    .textarea{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h4{
+                            font-size: calc(0.5em + 1vw);
+                            font-weight: 100;
+                            text-align: center;
+                        }
+                    }
+                    .terminosYcondiciones{
+                        display: flex;
+                        justify-content: center;
+                        margin: 2%;
+                        input{
+                            margin: 6px;
+                        }
+                    }
+                    .botones{
+                        display: flex;
+                        justify-content: center;
+                        .boton{
+                            padding: map-get($map: $standard, $key: padding-standard);
+                            border-radius: map-get($map: $standard, $key: border-standard);
+                            background-color:map-get($map: $standard, $key:background-standard );
+                            font-size: map-get($map: $standard, $key:font-standard );
+                            font-weight: map-get($map: $standard, $key:weight-standard);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

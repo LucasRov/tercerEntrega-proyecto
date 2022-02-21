@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="descripcion" content="Contanos en que podemos ayudarte. Te enviamos un presupuesto con nuestro planes sugeridos para potenciar al máximo tu empresa y/o producto">
+    <meta name="keywords" content="Linear, diseño, branding, fotografía, marca, publicidad, contacto, sugerencias, potenciar, presupuesto, plan de marketing, producto, redes sociales, logos, ventas, posicionamiento."> 
+
+
+
+    <title> Contacto - Linear</title>
+
+
+ <!---------------------------------------------------------
+          LINK CSS BOOSTRAP   
+    ----------------------------------------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-----------------------------------------------------------
+          LINK CSS   
+    ------------------------------------------------------------>
+
+    <link rel="stylesheet" href="../estilos/main.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="../index.html"><img class="logo" src="https://drive.google.com/uc?export=download&id=13QzBO93rdORw0iCUZQOHsCWp3RDUOdgZ" alt="Logo de Linear"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-6"  aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-6" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-6" href="./nuestrosClientes.html">Nuestros clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-6" href="./contacto.html">Contacto</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contenido4">
+            <section class="tituloContacto">
+                <h1 id="titulo">Contacto</h1>              
+                <h2>
+                    Dejá tu consulta y nos pondremos en contacto.
+                </h2>
+                <p class="subtitulo">
+                    Contanos en que podemos ayudarte y armamos un presupuesto acorde a tu proyecto.
+                </p>
+            </section>
+
+            <!--redes sociales-->
+
+            <section class="cajaRedes">
+                <h2 class="tituloRedes">Visita nuestras redes</h2>
+                <div class="cajaLogos">
+                    <a class="logoRedes"href="https://www.facebook.com/" target="_blank" ><img src="https://drive.google.com/uc?export=download&id=1kyhQ54DeRpXH4EE76QADJ5c8BSTiJFUJ" alt="logo facebook" >Facebook</a>
+                    <a class="logoRedes" href="https://www.instagram.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1T8RvaKNs6NIa7lXPavxVtZV0ZXaHYhMx" alt="logo instagram">Instagram</a>
+                    <a class="logoRedes" href="https://ar.linkedin.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1JJUE7yxBt0YNrIggjMLLns5mgYkMif9l" alt="logo likedin">Linkedin</a>
+                </div>
+            </section>
+
+            <!--formulario-->
+            
+            <section class="cajaFormulario">
+                <form  class="formulario" name="formulario">
+                    <p class="tituloFormulario">Dejá tu mensaje y nos pondremos <br> en contacto a la brevedad</p>
+                    <fieldset>
+                        <div>
+                            <label for="nombre_apellido">Nombre y apellido</label>
+                            <input type="text" name="nombre_apellido"/>
+                        </div>
+                        <div>
+                            <label for="email"> Completa tu email</label>
+                            <input type="email" required placeholder=" ejemplo@lineal.com">
+                        </div>
+                        <div class="tipoCliente">
+                            <p class="textoTipo">Tipo de cliente</p>
+                            <select name="tamaño">
+                                <option value="personal">Personal</option>
+                                <option value="empresa">Empresa</option>
+                                <option value="Org sin lucro">Org. sin lucro</option>
+                            </select>
+                        </div>
+                        <div class="textarea">
+                            <form action="">
+                            <textarea name="En que podemos ayudarte" cols="1em" rows="8em"></textarea>
+                        </div>
+                        <div class="terminosYcondiciones">
+                            <p> Acepta términos y condiciones</p>
+                            <input type="Checkbox" name="Acepta" value="1"/>
+                        </div>
+                        <div class="botones"> 
+                             <input class="boton" type="submit" value="Enviar Formulario"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p class="derechos">Todos los derechos reservados - LINEAR -    Lucas Rovere</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!--    LINK JS BOOSTRAP     -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

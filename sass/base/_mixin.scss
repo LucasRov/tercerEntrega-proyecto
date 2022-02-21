@@ -1,0 +1,7 @@
+//mixin utilizado en page servicios
+
+
+@mixin border ($border) {
+    border: solid ($border);
+    border-radius: 20px;
+} 

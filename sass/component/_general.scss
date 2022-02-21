@@ -1,0 +1,172 @@
+
+//ESTILOS GENERALES. MENU//
+
+/*--------------------------------------------------------
+ESTILOS GENERALES. MENÚ
+--------------------------------------------------------*/
+
+header{
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+        background-color: $background-color;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        .container-fluid{
+            .navbar-brand{
+                width: 8%;
+                margin-left: 5%;
+                .logo{
+                    width: 80%;
+                    @media screen and (max-width:992px){
+                        width: 100px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .navbar-toggler{
+                margin-right: 15px;
+            }
+            .navbar-collapse{
+                @media screen and (min-width:992px){
+                        display: flex;
+                        justify-content: center;
+                        height: 30px;
+                        margin-right: 10%;
+                    }
+                .navbar-nav{
+                    width: 100%;
+                    justify-content: center;
+                    @media screen and (max-width:992px){
+                        width: 100%;
+                    }
+                    .nav-item{
+                        @media screen and (max-width:992px){
+                            display: flex;
+                            justify-content: center;
+                            margin: 1%; 
+                        }
+                        @media screen and (min-width:992px){
+                            margin: 3%;
+                        }
+                        .nav-link{
+                            border-radius: map-get($map: $premium, $key: border-premium);
+                            box-shadow: map-get($map: $premium, $key: box-premium );
+                            background-color: map-get($map: $premium, $key: background-premium );
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            @media screen and (max-width:992px){
+                                text-align: center;
+                                width: 170px;
+                                padding:0%;
+                            }
+                            &:hover{
+                            transform: scale(1.2);
+                            padding-block-end: 3px;
+                            border-bottom: 1px solid;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------
+ESTILOS GENERALES. MAIN 
+--------------------------------------------------------*/
+//titulos//
+body{
+    background-color: rgb(248, 248, 248);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .container-fluid{
+        display: grid;
+        grid-template-areas:"header"
+                            "main"
+                            "footer" ;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        main{
+            grid-area: main;
+            min-height: 100vh;
+            @media screen and (max-width:768px){
+                margin-top: 20%;
+                }
+            @media screen and (max-width:480px){
+                margin-top: 25%;
+                }
+            #titulo{
+                position: relative;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-top: 10%;
+                letter-spacing: 5px;   
+                font-size: calc(1.9em + 1vw);
+                color: rgb(18, 41, 250);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            h2{
+                text-align: center;
+                color: $text-black;
+                font-size: calc(0.8em + 1vw);
+                margin: 0% 0% 0% 0% ;
+            }
+
+            h3{
+                color: $text-black;
+                font-size: calc(0.8em + 1vw);
+                margin-top: 10%;
+                text-align: center;
+            }
+            .subtitulo{
+                position: relative;
+                color:$text-black;
+                margin: 3% 20% 10% 20%;
+                text-align: center;
+                font-size: calc(0.3em + 1vw);
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------
+ESTILOS GENERALES. FOOTER
+--------------------------------------------------------*/
+
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    align-items: center;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    box-shadow:  rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+}
+
+.derechos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0%;
+    color: white;
+
+}

@@ -1,0 +1,302 @@
+
+
+/*--------------------------------------
+   ESTILOS PAGE NUESTROS CLIENTES
+   --------------------------------------*/
+
+.container-fluid{
+    .contenido3{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:"tituloPortafolio"
+                            "cajaClientes";
+        grid-template-columns: 1fr;  
+        .tituloPortafolio{
+            grid-area: tituloPortafolio;
+            .clientesTitulo{
+                    font-size: 40px;
+            }
+        }  
+        .cajaClientes{
+            grid-area: cajaClientes;
+            display: grid;
+            grid-template-areas: "airesDeTradicion"
+                                "onceDepartamento"
+                                "avance"
+                                "sublitex"
+                                "radiante";
+            grid-template-columns: 1fr;
+            @media screen and (max-width:768px){
+                margin: 20% 0% 0%;
+                }
+            .subCajas{
+                span{
+                display: flex;
+                justify-content: center;
+                font-size: 2.5em;
+                color: white;
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .airesDeTradicion{
+                grid-area: airesDeTradicion;
+                span{
+                    color: black
+                }
+                .clientes{
+                    @extend%fondo-cliente;
+                    @extend%media-clientes;
+                    p{
+                        @extend%texto-cliente;
+                    }
+                    .cajaImg{
+                       @extend%caja-imagenes;
+                        .img1{
+                            @extend%imagen-principal;
+                            @media screen and (max-width:768px){
+                                width: 40%;
+                            }
+                        }
+                        .img2{
+                            margin: 0 5% 13% 0;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 40%;
+                                }
+                            } 
+                        }
+                        .img3{
+                            margin: 13% 0 0% 0%;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .onceDepartamento{
+                grid-area: onceDepartamento; 
+                span{
+                    color: black
+                }
+                .clientes{
+                   
+                    @extend%fondo-cliente;
+                    @extend%media-clientes;
+                    p{
+                       @extend%texto-cliente;
+                    }
+                    .cajaImg{
+                        @extend%caja-imagenes;
+                        .img1{
+                            @extend%imagen-principal;
+                            @media screen and (max-width:768px){
+                                width: 40%;
+                            }
+                        }
+                        
+                        .img2{
+                            margin: 0 5% 13% 0;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            } 
+                        }
+                        
+                        .img3{
+                            margin: 13% 0 0% 0%;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+            .avance{
+                grid-area: avance;
+                span{
+                    color: black
+                }
+                .clientes{
+                    @extend%fondo-cliente;
+                    @extend%media-clientes;
+                    p{
+                        @extend%texto-cliente;
+                    }
+                    .cajaImg{
+                        @extend%caja-imagenes;
+                        .img1{
+                            @extend%imagen-principal;
+                            @media screen and (max-width:768px){
+                                width: 40%;
+                            }
+                        }
+                        
+                        .img2{
+                            margin: 0 5% 13% 0;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            } 
+                        }
+                        .img3{
+                            margin: 13% 0 0% 0%;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .sublitex{
+                grid-area: sublitex;
+                span{
+                    color: black
+                }
+                .clientes{
+                    @extend%fondo-cliente;
+                    @extend%media-clientes;
+                    p{
+                        @extend%texto-cliente;
+                    }
+                    .cajaImg{
+                        @extend%caja-imagenes;
+                        .img1{
+                            @extend%imagen-principal;
+                            @media screen and (max-width:768px){
+                                width: 40%;
+                            }
+                        }
+                        .img2{
+                            margin: 0 5% 13% 0;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            } 
+                        }
+                        .img3{
+                            margin: 13% 0 0% 0%;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .radiante{
+                grid-area: radiante;
+                span{
+                    color: black
+                }
+                .clientes{
+                    @extend%fondo-cliente;
+                    @extend%media-clientes;
+                    p{
+                        @extend%texto-cliente;
+                    }
+                    .cajaImg{
+                        @extend%caja-imagenes;
+                        .img1{
+                            @extend%imagen-principal;
+                            @media screen and (max-width:768px){
+                                width: 40%;
+                            }
+                        }
+                        .img2{
+                            margin: 0 5% 13% 0;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            } 
+                        }
+                        .img3{
+                            margin: 13% 0 0% 0%;
+                            @extend%imagen-secundaria;
+                            @media screen and (max-width:768px){
+                                width: 35%;
+                            }
+                            &:hover{
+                                width: 25%;
+                                z-index: 100;
+                                @media screen and (max-width:768px){
+                                    width: 45%;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,803 @@
+/*reset*/
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+
+
+/*--------------------------------------
+   ESTILOS GENERALES
+   --------------------------------------
+
+
+
+body{
+    background-image: url(https://drive.google.com/uc?export=download&id=1EucIo7kj_xKSurAQTXccPrPg1xq79f3U);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header{
+    grid-area: header;
+}
+
+/*COMIENZA ESTILOS NAV MENU*/
+*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgb(14,8,119);
+    background: linear-gradient(347deg, rgba(14,8,119,1) 0%, rgba(64,83,255,0.969625350140056) 0%, rgba(0,46,147,1) 76%);
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(0, 0, 195, 0.774)
+}
+
+.nav-item a:hover{
+    transform: scale(1.2);
+    background: rgb(14,8,119);
+    background: linear-gradient(347deg, rgba(14,8,119,1) 0%, rgba(0,3,110,1) 35%, rgba(0,46,147,1) 96%);
+    }
+
+@media screen and (max-width:992px){
+     
+    .navbar-nav li{
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .navbar-nav li a{
+        text-align: center;
+        width: 170px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: rgba(0, 0, 195, 0.774);
+    }
+}
+@media screen and (max-width:768px){
+    .navbar-nav li a{
+        width: 170px;
+    }
+}
+
+@media screen and (min-width:992px){
+    #navbarNav{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+    }
+    
+   .navbar-nav li{
+    margin: 3%;
+    } 
+}
+
+.logo{
+    margin-left: 30%;
+    width: 150px;
+}
+  /*fin menu*/
+
+
+/*COMIENZA ESTILOS DE TÍTULOS*/
+
+#titulo{
+    position: relative;
+    text-align: center;
+    margin-top: 10%;   
+    font-size: calc(3em + 1vw);
+    color: rgb(18, 41, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: calc(0.9em + 1vw);
+    margin: 5% 5% 0 5% ;
+}
+
+h3{
+    color: white;
+    font-size: calc(2em + 1vw);
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+/*COMIENZA ESTILOS DE CONTENEDORES*/
+
+
+.container-fluid{
+    display: grid;
+    grid-template-areas:"header"
+                        "main"
+                        "footer" ;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+    grid-area: main;
+    min-height: 100vh;
+}
+@media screen and (max-width:768px){
+    main{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width:480px){
+    main{
+        margin-top: 20%;
+    }
+}
+
+
+/*--------------------------------------
+   ESTILOS INDEX
+   --------------------------------------*/
+
+.videosPresentacion > video{
+    width: 100%;
+}
+
+.ayudamos{
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: 8% 0% 10% 0%;
+    text-align: center;
+    font-size: calc(0.9em + 1vw);
+}
+
+@media screen and (max-width:768px) {
+    .videosPresentacion{
+         margin-top: 0px;
+    }
+}
+
+
+/*fin index*/
+
+
+/*--------------------------------------
+   ESTILOS PAGE NOSOTROS
+   --------------------------------------*/
+
+.titulos{
+    grid-area: titulos;
+}
+
+.main{
+    grid-area: main;
+}
+
+.titulo2{
+    grid-area: titulo2;
+}
+
+.titulo3{
+    grid-area: titulo3;
+    margin: 4%;
+    color: black;
+}
+
+.historia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 0% 0 10% 0;
+}
+
+.fondoTexturado{
+   background-image: url(https://drive.google.com/uc?export=download&id=1-GbUA2tXkoNyItHpGJPITIQxO3Xs_EHv);
+   width: 100%;
+   padding: 5% 0 5% 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.imagen1{
+    margin-left: 10%; 
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.personal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.personal > div > img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.personal1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1% 0 1%;
+}
+
+.cajaTextosNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}    
+
+.cajaTextosNosotros > p{
+    font-size: 1.5rem;
+    color: silver;
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
+
+.personal1 > p{
+    font-size: 1.5em;
+    color: black;
+    font-weight: 900;
+    margin: 1%;
+}
+
+.fotoPersonal{
+    width: 100%;
+}
+
+.carruselPersonal{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+
+    .historia{
+        flex-direction: column;
+        margin: 2% 0 0% 0;
+    }
+    
+    .imagen1{ 
+        margin-left: 0%;
+        width: 80%;
+    }
+    
+    .personal{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .fondoTexturado{
+        padding-top: 20%;
+    }
+
+    .personal{
+        display: none;
+    }
+
+    .carruselPersonal{
+        display: block;
+    }
+
+}
+/*Fin nosotros*/
+
+
+
+/*--------------------------------------
+   ESTILOS PAGE SERVICIOS
+   --------------------------------------*/
+
+/*textos*/
+
+.marketingFotografia{
+    margin: 2% 0% 10% 0%;
+    color: white;
+    font-size: calc(1em + 1vw);
+}
+.brandingDiseño{
+    margin: 2% 0% 10% 0%;
+    color: white;
+    font-size: calc(1em + 1vw);
+}
+
+/*cajas - main*/
+
+.cajaPadre{
+    display: grid;
+    grid-template-areas: "caja1"
+                        "caja2"
+                        "caja3"
+                        "caja4";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin: 5%;
+}
+
+.caja1{
+    grid-area: caja1;
+    
+}
+
+.caja2{
+    grid-area: caja2;
+   
+}
+
+.caja3{
+    grid-area: caja3;
+}
+
+.caja4{
+    grid-area: caja4;
+}
+
+.estiloCaja1{
+    margin: 0% 20% 0% 0px ;
+    display: flex;
+    border: solid 3px;
+    border-radius: 20px;
+    background-color: hsla(214, 97%, 69%, 0.302);
+}
+
+.estiloCaja2{
+    margin: 0% 0% 0% 20% ;
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid 3px;
+    border-radius: 20px;
+    background-color: #65a7fd4d;
+}
+
+.textoDeCajas{
+    text-align: center;
+    color: white;
+    font-size: calc(.5em + 1vw);
+}
+
+.imgServicio1{
+    width:30%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.imgServicio2{
+    width: 30%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.tituloTexto{
+    margin: 0% 10% 0%10%;
+}
+
+/*animacion presupuesto*/
+
+.imgPresupuesto{ 
+    width: 8%;
+    position: fixed;
+    top: 75%;
+    right:5%;
+    animation-name: presupuesto;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes presupuesto{
+    from{
+        transform: rotate(0.95turn);;
+    }
+
+    to{
+        transform: rotate(1.05turn);
+    }
+}
+
+/*fin main servicios*/
+
+@media screen and (max-width:1024px){
+    .caja1, .caja2, .caja3, .caja4{
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .caja1, .caja2, .caja3, .caja4{
+         flex-direction: column;
+        margin: 0%;
+    }
+       
+    .imgServicio1, .imgServicio2{
+        width: 100%;
+        border-radius: 20px 20px 0px 0;
+    }
+
+    .imgPresupuesto{
+        width: 25%;
+    }
+
+}
+
+/*fin servicios*/
+
+
+
+/*--------------------------------------
+   ESTILOS PAGE PORTAFOLIO
+   --------------------------------------*/
+
+
+.contenido3{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:"tituloPortafolio"
+                        "cajaClientes";
+    grid-template-columns: 1fr;                
+}
+
+.seccion{
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    font-size: 50px;
+}
+
+.tituloPortafolio{
+    grid-area: tituloPortafolio;
+}
+
+.clientesTitulo{
+    grid-area: clientesTitulo;
+}
+
+
+.cajaClientes{
+    grid-area: cajaClientes;
+    display: grid;
+    grid-template-areas: "aireDeTradicion"
+                        "onceDepartamento"
+                        "avance"
+                        "sublitex"
+                        "radiante";
+    grid-template-columns: 1fr;
+}
+.airesDetradicion{
+    grid-area: airesDeTradicion;
+}
+
+.onceDepartamento{
+    grid-area: onceDepartamento;
+}
+
+.avance{
+    grid-area: avance;
+}
+
+.sublitex{
+    grid-area: sublitex;
+}
+
+.radiante{
+    grid-area: radiante;
+}
+
+.subCajas > p{
+    font-size: 2.5em;
+    margin-left: 4%;
+    color: white;
+}
+
+.clientes{
+    background-color: rgb(101, 167, 253, 40%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.cajaImg{
+    width: 70%;
+    display: flex;
+    position: relative;
+    align-items: center; 
+    justify-content: center;
+}
+
+.img1{
+   width: 25%;
+   position: absolute;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.img2{
+    width: 20%;
+    margin: 0 5% 13% 0;
+    transition: 0.8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .img3{
+    width: 20%;
+    margin: 13% 0 0% 0%;
+    transition: 0.8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+.clientes > p{
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: 5%;
+    font-size: calc(0.4em + 1vw);
+}
+
+/*hover de imágenes*/
+
+.img2:hover{
+    width: 25%;
+    z-index: 100;
+ } 
+ .img3:hover{
+    width: 25%;
+    z-index: 100;
+ }
+
+
+@media screen and (max-width:768px){
+ 
+    .cajaClientes{
+        margin: 20% 0% 0%;
+    }
+
+    .clientes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10%;
+
+    }
+
+    .cajaImg{
+        width: 100%;
+    }
+
+    .clientes > Img{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .img1{
+        width: 40%;
+    }
+
+    .img2, .img3{
+        width: 35%;
+    }
+
+   .img2:hover, .img3:hover{
+       width: 45%;
+   }
+
+    .subCajas > p{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .clientes > p{
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+/*Fin Portafolio*/
+
+
+/*--------------------------------------
+   ESTILOS PAGE CONTACTO
+   --------------------------------------*/
+
+
+.contenido4{
+    grid-area: main;
+    display: grid;
+    min-height: 50em;
+    grid-template-areas: "tituloContacto"
+                            "cajaRedes"
+                            "cajaFormulario";
+    grid-template-columns: 1fr ;    
+}
+
+.tituloContacto{
+    grid-area: tituloContacto
+}
+
+/*REDES*/ 
+
+.tituloContacto > p{
+    color: white;
+    text-align: center;
+    margin: 5%;
+    font-size: calc(0.8em + 1vw);;
+}
+
+.cajaRedes{
+    grid-area: cajaRedes;
+}
+
+.cajaRedes > h3{
+    margin-bottom: 3%;
+}
+
+.cajaLogos{
+    display: flex;
+    justify-content: center;
+}
+
+.cajaLogos > a{
+    text-decoration: none;
+    color: white;
+    font-size: calc(1em + 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.logoRedes > img{
+    width: 20%;
+    margin: 1em 1em 0 1em ;
+}
+
+/*FORMULARIO*/
+
+.cajaFormulario{
+    grid-area: cajaFormulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.tituloFormulario{
+    color: black;
+    margin-bottom: 3%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.formulario{
+    background-image: url(https://drive.google.com/uc?export=download&id=1Vf2xJcxRuO1g6WDvZRUxKugTqKnqvfkj);
+    align-items: center;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.formulario > fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tipoCliente{
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.tipoCliente > select{
+    margin-left: 4%;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textarea > h4{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.terminosYcondiciones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2%;
+}
+
+.terminosYcondiciones > p{
+    padding-right: 2%;
+}
+
+.boton{
+    padding: 1%;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+ .botones{
+     display: flex;
+     justify-content: center;
+ }
+
+ @media screen and (max-width:768px){
+
+    .cajaLogos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logoRedes > img{
+        width: 15%;
+    }
+
+    .tituloFormulario{
+        margin-top: 5%;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    .formulario{
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .formulario{
+        height: 40rem;
+    }
+
+    .tipoCliente{
+        margin: 5% 0 5% 0;
+    }
+}
+
+
+
+/*--------------------------------------
+   ESTILOS PAGE FOOTER
+   --------------------------------------*/
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(101, 167, 253);
+    display: flex;
+    justify-content: center;
+}
+
+.derechos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0%;
+
+}
+
+/*termina footer*/
