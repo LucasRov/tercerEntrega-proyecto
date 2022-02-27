@@ -22,15 +22,11 @@ ESTILOS CONTACTO
                     font-size: calc(0.8em + 1vw);;
                 }
         }   
-        .cajaRedes{
+        .Redes{
             grid-area: cajaRedes;
             background-color: $gris-fondo;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            .tituloRedes{
-                margin: 3%;
-                font-size: calc(0.8em + 1vw);
-            }
-            .cajaLogos{
+            .logos{
                 display: flex;
                 justify-content: center;
                 margin: 3%;

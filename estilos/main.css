@@ -1,74 +1,76 @@
 @charset "UTF-8";
-.container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes, .container-fluid .contenido3 .cajaClientes .avance .clientes, .container-fluid .contenido3 .cajaClientes .sublitex .clientes, .container-fluid .contenido3 .cajaClientes .radiante .clientes {
+.container-fluid main .cajaClientes .descripcionCliente .clientes {
   background: rgba(74, 74, 74, 0.302);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2%;
-  height: 400px;
+  margin: 2% auto;
+  width: 80%;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; }
 
+@media screen and (max-width: 1024px) {
+  .container-fluid main .cajaClientes .descripcionCliente .clientes {
+    height: 250px; } }
+
 @media screen and (max-width: 768px) {
-  .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes, .container-fluid .contenido3 .cajaClientes .avance .clientes, .container-fluid .contenido3 .cajaClientes .sublitex .clientes, .container-fluid .contenido3 .cajaClientes .radiante .clientes {
+  .container-fluid main .cajaClientes .descripcionCliente .clientes {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 10%;
-    height: 400px; } }
+    height: 100%; } }
 
-.container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img1, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img1, .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img1, .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img1, .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img1 {
-  width: 25%;
+.container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img1 {
+  width: 30%;
   position: absolute;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
-.container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img2, .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img3, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img2, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img3, .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img2, .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img3, .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img2, .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img3, .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img2, .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3 {
-  width: 20%;
+.container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img2, .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img3 {
+  width: 25%;
   transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
-.container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes p, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes p, .container-fluid .contenido3 .cajaClientes .avance .clientes p, .container-fluid .contenido3 .cajaClientes .sublitex .clientes p, .container-fluid .contenido3 .cajaClientes .radiante .clientes p {
+.container-fluid main .cajaClientes .descripcionCliente .clientes p {
   color: white;
-  width: 50%;
+  width: 70%;
   text-align: center;
-  margin: 5%;
+  margin: 7% 2%;
   font-size: calc(0.4em + 1vw); }
   @media screen and (max-width: 768px) {
-    .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes p, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes p, .container-fluid .contenido3 .cajaClientes .avance .clientes p, .container-fluid .contenido3 .cajaClientes .sublitex .clientes p, .container-fluid .contenido3 .cajaClientes .radiante .clientes p {
+    .container-fluid main .cajaClientes .descripcionCliente .clientes p {
       width: 80%;
       font-size: 1rem; } }
 
-.container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg {
+.container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
   width: 70%;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 1024px) {
+    .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
+      margin-top: 0%; } }
   @media screen and (max-width: 768px) {
-    .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg, .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg {
-      width: 100%; } }
+    .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
+      width: 80%;
+      margin-top: 10%; } }
 
-.container-fluid .contenido2 .cajaPadre .caja1, .container-fluid .contenido2 .cajaPadre .caja2, .container-fluid .contenido2 .cajaPadre .caja3, .container-fluid .contenido2 .cajaPadre .caja4 {
+.container-fluid .contenido2 .servicios .servicioDer, .container-fluid .contenido2 .servicios .servicioIzq {
   display: flex;
-  background-color: rgba(75, 75, 255, 0.719);
+  background-color: rgba(204, 204, 255, 0.692);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
 
-.container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .textoDeCajas {
-  margin: 0% 10% 0% 10%;
+.container-fluid .contenido2 .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid .contenido2 .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+  margin: 0% 10% 5% 10%;
   text-align: center;
   color: black;
   font-size: calc(0.4em + 1vw); }
   @media screen and (max-width: 768px) {
-    .container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .textoDeCajas, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .textoDeCajas {
+    .container-fluid .contenido2 .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid .contenido2 .servicios .servicioIzq .descripcionServicio .textoDeCajas {
       width: 80%;
       font-size: 1rem; } }
-
-.container-fluid .contenido2 .cajaPadre .caja1 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja2 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja3 .tituloTexto .tituloCaja, .container-fluid .contenido2 .cajaPadre .caja4 .tituloTexto .tituloCaja {
-  margin: 2% 0% 3% 0%;
-  color: white;
-  font-size: calc(0.8em + 1vw);
-  text-shadow: 1px 1px 10px #000000; }
 
 /*--------------------------------------------------------
 ESTILOS GENERALES. MENÚ
@@ -77,7 +79,7 @@ header .navbar {
   position: fixed;
   width: 100%;
   z-index: 200;
-  background-color: #5959c3;
+  background-color: #a6a6fb;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
   header .navbar .container-fluid .navbar-brand {
     width: 8%;
@@ -149,7 +151,7 @@ body {
       @media screen and (max-width: 480px) {
         body .container-fluid main {
           margin-top: 25%; } }
-      body .container-fluid main #titulo {
+      body .container-fluid main #tituloPrincipal {
         position: relative;
         text-align: center;
         text-transform: uppercase;
@@ -159,16 +161,14 @@ body {
         font-size: calc(1.9em + 1vw);
         color: #1229fa;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-      body .container-fluid main h2 {
+      body .container-fluid main .tituloSecundario {
         text-align: center;
         color: black;
         font-size: calc(0.8em + 1vw);
-        margin: 0% 0% 0% 0%; }
-      body .container-fluid main h3 {
-        color: black;
-        font-size: calc(0.8em + 1vw);
-        margin-top: 10%;
-        text-align: center; }
+        margin: 2%; }
+        @media screen and (max-width: 1024px) {
+          body .container-fluid main .tituloSecundario {
+            font-size: calc(1.2em + 1vw); } }
       body .container-fluid main .subtitulo {
         position: relative;
         color: black;
@@ -188,7 +188,7 @@ footer {
   grid-area: footer;
   padding: 10px;
   align-items: center;
-  background-color: #5959c3;
+  background-color: #a6a6fb;
   display: flex;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
@@ -205,9 +205,10 @@ footer {
 ESTILOS INDEX
 --------------------------------------------------------*/
 .container-fluid main .videosPresentacion > video {
-  width: 100%; }
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; }
 
-.container-fluid main #tituloPrincipal {
+.container-fluid main #tituloHome {
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -222,189 +223,152 @@ ESTILOS PAGE NOSOTROS
 --------------------------------------------------------*/
 .container-fluid {
   width: 100%; }
-  .container-fluid .main1 {
-    grid-area: main; }
-    .container-fluid .main1 .titulos {
-      grid-area: titulos; }
-    .container-fluid .main1 .titulo2 {
-      grid-area: titulo2;
-      font-size: calc(1.2em + 1vw);
-      margin-bottom: 40px; }
+  .container-fluid .tituloSecundario {
+    margin: 3%;
+    font-size: calc(1.2em + 1vw); }
+    @media screen and (max-width: 768px) {
+      .container-fluid .tituloSecundario {
+        margin: 10%; } }
+  .container-fluid .historia {
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; }
+    .container-fluid .historia .imagen1 {
+      width: 50%;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
       @media screen and (max-width: 768px) {
-        .container-fluid .main1 .titulo2 {
-          margin: 10%; } }
-    .container-fluid .main1 .historia {
+        .container-fluid .historia .imagen1 {
+          margin-top: 20px;
+          width: 80%; } }
+    .container-fluid .historia .cajaTextosNosotros {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      @media screen and (max-width: 768px) {
+        .container-fluid .historia .cajaTextosNosotros {
+          flex-direction: column; } }
+      .container-fluid .historia .cajaTextosNosotros p {
+        font-size: calc(0.3em + 1vw);
+        color: #8b8b8b;
+        text-align: start;
+        width: 60%;
+        margin: 5%; }
+        @media screen and (max-width: 768px) {
+          .container-fluid .historia .cajaTextosNosotros p {
+            width: 80%;
+            font-size: 1em;
+            text-align: start;
+            margin-top: 30px; } }
+  .container-fluid .fondoTexturado {
+    background-color: rgba(74, 74, 134, 0.719);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 768px) {
+      .container-fluid .fondoTexturado {
+        padding-top: 2%; } }
+    .container-fluid .fondoTexturado .carruselPersonal {
+      width: 100%;
+      display: none; }
+      @media screen and (max-width: 768px) {
+        .container-fluid .fondoTexturado .carruselPersonal {
+          margin-top: 0px;
+          display: block;
+          margin: 0% auto;
+          width: 70%; } }
+    .container-fluid .fondoTexturado .personal {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      color: white;
-      text-align: center;
-      margin: 0% 0 10% 0; }
+      margin-bottom: 2%;
+      position: relative; }
       @media screen and (max-width: 768px) {
-        .container-fluid .main1 .historia {
-          flex-direction: column;
-          margin: 2% 0 0% 0; } }
-      .container-fluid .main1 .historia .imagen1 {
-        margin-left: 10%;
-        width: 40%;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .main1 .historia .imagen1 {
-            margin-left: 0%;
-            width: 80%; } }
-      .container-fluid .main1 .historia .cajaTextosNosotros {
+        .container-fluid .fondoTexturado .personal {
+          display: none; } }
+      .container-fluid .fondoTexturado .personal .puesto {
         display: flex;
         flex-direction: column;
-        align-items: center; }
-        .container-fluid .main1 .historia .cajaTextosNosotros p {
-          font-size: calc(0.3em + 1vw);
-          color: #8b8b8b;
-          text-align: start;
-          margin: 5%; }
+        align-items: center;
+        margin: 0 1% 0 1%; }
+        .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
+          width: 70%;
+          margin-bottom: 10%;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
           @media screen and (max-width: 768px) {
-            .container-fluid .main1 .historia .cajaTextosNosotros p {
-              width: 80%;
-              font-size: 1em;
-              text-align: center; } }
-    .container-fluid .main1 .fondoTexturado {
-      background-color: rgba(74, 74, 134, 0.719);
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      width: 100%;
-      padding: 5% 0 5% 0;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .main1 .fondoTexturado {
-          padding-top: 2%; } }
-      .container-fluid .main1 .fondoTexturado .titulo3 {
-        grid-area: titulo3;
-        font-size: calc(1.2em + 1vw);
-        margin: 0% 0 3% 0;
-        color: black; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .main1 .fondoTexturado .titulo3 {
-            margin: 5%; } }
-      .container-fluid .main1 .fondoTexturado .carruselPersonal {
-        width: 100%;
-        display: none; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .main1 .fondoTexturado .carruselPersonal {
-            margin-top: 0px;
-            display: block; } }
-      .container-fluid .main1 .fondoTexturado .personal {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2%;
-        position: relative; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .main1 .fondoTexturado .personal {
-            display: none; } }
-        .container-fluid .main1 .fondoTexturado .personal .personal1 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 0 1% 0 1%; }
-          .container-fluid .main1 .fondoTexturado .personal .personal1 .fotoPersonal {
-            width: 70%;
-            margin-bottom: 10%;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-          .container-fluid .main1 .fondoTexturado .personal .personal1 p {
-            font-size: calc(0.3em + 1vw);
-            color: black;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin: 1%; }
-          .container-fluid .main1 .fondoTexturado .personal .personal1 .nombreSector {
-            color: aqua;
-            font-size: 800px; }
+            .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
+              width: 200px; } }
+        .container-fluid .fondoTexturado .personal .puesto p {
+          font-size: calc(0.3em + 1vw);
+          color: black;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 1%; }
+        .container-fluid .fondoTexturado .personal .puesto .nombreSector {
+          color: aqua;
+          font-size: 800px; }
 
 /*--------------------------------------------------------
 ESTILOS PAGE SERVICIOS
 --------------------------------------------------------*/
-.container-fluid .contenido2 .cajaPadre {
+.container-fluid .contenido2 .servicios {
   display: grid;
   grid-template-areas: "caja1" "caja2" "caja3" "caja4";
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 5%; }
-  .container-fluid .contenido2 .cajaPadre .caja1 {
+  .container-fluid .contenido2 .servicios .servicioDer {
     grid-area: caja1;
     margin: 0% 23% 0% 0px;
     border: solid 0px;
     border-radius: 20px; }
     @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .cajaPadre .caja1 {
+      .container-fluid .contenido2 .servicios .servicioDer {
         margin: 0%; } }
     @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .cajaPadre .caja1 {
+      .container-fluid .contenido2 .servicios .servicioDer {
         flex-direction: column;
         margin: 0%; } }
-    .container-fluid .contenido2 .cajaPadre .caja1 .imgServicio1 {
+    .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
       width: 30%;
       border-radius: 20px 0px 0px 20px; }
+      @media screen and (max-width: 1024px) {
+        .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
+          width: 30%; } }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .cajaPadre .caja1 .imgServicio1 {
+        .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
-  .container-fluid .contenido2 .cajaPadre .caja2 {
+  .container-fluid .contenido2 .servicios .servicioIzq {
     grid-area: caja2;
     margin: 0% 0% 0% 23%;
     flex-direction: row-reverse;
     border: solid 0px;
     border-radius: 20px; }
     @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .cajaPadre .caja2 {
+      .container-fluid .contenido2 .servicios .servicioIzq {
         margin: 0%; } }
     @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .cajaPadre .caja2 {
+      .container-fluid .contenido2 .servicios .servicioIzq {
         flex-direction: column;
         margin: 0%; } }
-    .container-fluid .contenido2 .cajaPadre .caja2 .imgServicio2 {
+    .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
       width: 30%;
       border-radius: 0px 20px 20px 0px; }
+      @media screen and (max-width: 1024px) {
+        .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
+          width: 30%; } }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .cajaPadre .caja2 .imgServicio2 {
+        .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
-  .container-fluid .contenido2 .cajaPadre .caja3 {
-    grid-area: caja3;
-    margin: 0% 23% 0% 0px;
-    border: solid 0px;
-    border-radius: 20px; }
-    @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .cajaPadre .caja3 {
-        margin: 0%; } }
-    @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .cajaPadre .caja3 {
-        flex-direction: column;
-        margin: 0%; } }
-    .container-fluid .contenido2 .cajaPadre .caja3 .imgServicio1 {
-      width: 30%;
-      border-radius: 20px 0px 0px 20px; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .cajaPadre .caja3 .imgServicio1 {
-          width: 100%;
-          border-radius: 20px 20px 0px 0; } }
-  .container-fluid .contenido2 .cajaPadre .caja4 {
-    grid-area: caja4;
-    margin: 0% 0% 0% 23%;
-    flex-direction: row-reverse;
-    border: solid 0px;
-    border-radius: 20px; }
-    @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .cajaPadre .caja4 {
-        margin: 0%; } }
-    @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .cajaPadre .caja4 {
-        flex-direction: column;
-        margin: 0%; } }
-    .container-fluid .contenido2 .cajaPadre .caja4 .imgServicio2 {
-      width: 30%;
-      border-radius: 0px 20px 20px 0px; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .cajaPadre .caja4 .imgServicio2 {
-          width: 100%;
-          border-radius: 20px 20px 0px 0; } }
+  .container-fluid .contenido2 .servicios .servicioDer--grid {
+    grid-area: caja3; }
+  .container-fluid .contenido2 .servicios .servicioIzq--grid {
+    grid-area: caja4; }
 
 .container-fluid .contenido2 .imgPresupuesto {
   width: 8%;
@@ -429,177 +393,45 @@ ESTILOS PAGE SERVICIOS
 /*--------------------------------------
    ESTILOS PAGE NUESTROS CLIENTES
    --------------------------------------*/
-.container-fluid .contenido3 {
-  grid-area: main;
-  display: grid;
-  grid-template-areas: "tituloPortafolio" "cajaClientes";
+.container-fluid main .cajaClientes {
   grid-template-columns: 1fr; }
-  .container-fluid .contenido3 .tituloPortafolio {
-    grid-area: tituloPortafolio; }
-    .container-fluid .contenido3 .tituloPortafolio .clientesTitulo {
-      font-size: 40px; }
-  .container-fluid .contenido3 .cajaClientes {
-    grid-area: cajaClientes;
-    display: grid;
-    grid-template-areas: "airesDeTradicion" "onceDepartamento" "avance" "sublitex" "radiante";
-    grid-template-columns: 1fr; }
+  @media screen and (max-width: 768px) {
+    .container-fluid main .cajaClientes {
+      margin: 20% 0% 0%; } }
+  .container-fluid main .cajaClientes .descripcionCliente span {
+    display: flex;
+    justify-content: center;
+    font-size: calc(1.5em + 1vw);
+    color: black; }
     @media screen and (max-width: 768px) {
-      .container-fluid .contenido3 .cajaClientes {
-        margin: 20% 0% 0%; } }
-    .container-fluid .contenido3 .cajaClientes .subCajas span {
-      display: flex;
-      justify-content: center;
-      font-size: 2.5em;
-      color: white; }
+      .container-fluid main .cajaClientes .descripcionCliente span {
+        text-align: center;
+        font-size: 2rem; } }
+  @media screen and (max-width: 768px) {
+    .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img1 {
+      width: 40%; } }
+  .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img2 {
+    margin: 0 5% 13% 0; }
+    @media screen and (max-width: 768px) {
+      .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img2 {
+        width: 35%; } }
+    .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img2:hover {
+      width: 30%;
+      z-index: 100; }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .subCajas span {
-          text-align: center;
-          font-size: 2rem; } }
-    .container-fluid .contenido3 .cajaClientes .airesDeTradicion {
-      grid-area: airesDeTradicion; }
-      .container-fluid .contenido3 .cajaClientes .airesDeTradicion span {
-        color: black; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img1 {
+        .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img2:hover {
           width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img2 {
-        margin: 0 5% 13% 0; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img2 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img2:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img2:hover {
-              width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img3 {
-        margin: 13% 0 0% 0%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img3 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img3:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .airesDeTradicion .clientes .cajaImg .img3:hover {
-              width: 40%; } }
-    .container-fluid .contenido3 .cajaClientes .onceDepartamento {
-      grid-area: onceDepartamento; }
-      .container-fluid .contenido3 .cajaClientes .onceDepartamento span {
-        color: black; }
+  .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img3 {
+    margin: 13% 0 0% 0%; }
+    @media screen and (max-width: 768px) {
+      .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img3 {
+        width: 35%; } }
+    .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img3:hover {
+      width: 30%;
+      z-index: 100; }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img1 {
+        .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg .img3:hover {
           width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img2 {
-        margin: 0 5% 13% 0; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img2 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img2:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img2:hover {
-              width: 45%; } }
-      .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img3 {
-        margin: 13% 0 0% 0%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img3 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img3:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .onceDepartamento .clientes .cajaImg .img3:hover {
-              width: 45%; } }
-    .container-fluid .contenido3 .cajaClientes .avance {
-      grid-area: avance; }
-      .container-fluid .contenido3 .cajaClientes .avance span {
-        color: black; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img1 {
-          width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img2 {
-        margin: 0 5% 13% 0; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img2 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img2:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img2:hover {
-              width: 45%; } }
-      .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img3 {
-        margin: 13% 0 0% 0%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img3 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img3:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .avance .clientes .cajaImg .img3:hover {
-              width: 45%; } }
-    .container-fluid .contenido3 .cajaClientes .sublitex {
-      grid-area: sublitex; }
-      .container-fluid .contenido3 .cajaClientes .sublitex span {
-        color: black; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img1 {
-          width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img2 {
-        margin: 0 5% 13% 0; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img2 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img2:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img2:hover {
-              width: 45%; } }
-      .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img3 {
-        margin: 13% 0 0% 0%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img3 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img3:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .sublitex .clientes .cajaImg .img3:hover {
-              width: 45%; } }
-    .container-fluid .contenido3 .cajaClientes .radiante {
-      grid-area: radiante; }
-      .container-fluid .contenido3 .cajaClientes .radiante span {
-        color: black; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img1 {
-          width: 40%; } }
-      .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img2 {
-        margin: 0 5% 13% 0; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img2 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img2:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img2:hover {
-              width: 45%; } }
-      .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3 {
-        margin: 13% 0 0% 0%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3 {
-            width: 35%; } }
-        .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3:hover {
-          width: 25%;
-          z-index: 100; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .contenido3 .cajaClientes .radiante .clientes .cajaImg .img3:hover {
-              width: 45%; } }
 
 /*--------------------------------------------------------
 ESTILOS CONTACTO
@@ -618,24 +450,21 @@ ESTILOS CONTACTO
       text-align: center;
       margin: 5%;
       font-size: calc(0.8em + 1vw); }
-  .container-fluid .contenido4 .cajaRedes {
+  .container-fluid .contenido4 .Redes {
     grid-area: cajaRedes;
     background-color: rgba(74, 74, 74, 0.302);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-    .container-fluid .contenido4 .cajaRedes .tituloRedes {
-      margin: 3%;
-      font-size: calc(0.8em + 1vw); }
-    .container-fluid .contenido4 .cajaRedes .cajaLogos {
+    .container-fluid .contenido4 .Redes .logos {
       display: flex;
       justify-content: center;
       margin: 3%;
       width: 30%;
       margin-left: 35%; }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido4 .cajaRedes .cajaLogos {
+        .container-fluid .contenido4 .Redes .logos {
           display: flex;
           flex-direction: column; } }
-      .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes {
+      .container-fluid .contenido4 .Redes .logos .logoRedes {
         text-decoration: none;
         color: black;
         font-size: calc(0.3em + 1vw);
@@ -644,12 +473,12 @@ ESTILOS CONTACTO
         align-items: center;
         margin: 2%; }
         @media screen and (max-width: 768px) {
-          .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes {
+          .container-fluid .contenido4 .Redes .logos .logoRedes {
             font-size: 0.8em; } }
-        .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes img {
+        .container-fluid .contenido4 .Redes .logos .logoRedes img {
           width: 30%; }
           @media screen and (max-width: 768px) {
-            .container-fluid .contenido4 .cajaRedes .cajaLogos .logoRedes img {
+            .container-fluid .contenido4 .Redes .logos .logoRedes img {
               width: 40%; } }
   .container-fluid .contenido4 .cajaFormulario {
     grid-area: cajaFormulario;

@@ -3,7 +3,7 @@ ESTILOS PAGE SERVICIOS
 --------------------------------------------------------*/
 .container-fluid{
     .contenido2{
-        .cajaPadre{
+        .servicios{
             display: grid;
             grid-template-areas: "caja1"
                                 "caja2"
@@ -12,7 +12,7 @@ ESTILOS PAGE SERVICIOS
             grid-template-columns: 1fr;
             grid-gap: 1rem;
             margin: 5%;
-            .caja1{
+            .servicioDer{
                 grid-area: caja1;
                 margin: 0% 23% 0% 0px ;
                 @include border(0px);
@@ -27,21 +27,21 @@ ESTILOS PAGE SERVICIOS
                 .imgServicio1{
                     width:30%;
                     border-radius: 20px 0px 0px 20px;
+                    @media screen and (max-width:1024px){
+                        width: 30%;
+                    }
                     @media screen and (max-width:768px){
                         width: 100%;
                         border-radius: 20px 20px 0px 0;
                     }
                 }
-                .tituloTexto{
+                .descripcionServicio{
                     .textoDeCajas{
                         @extend%text-servicios;
                     }
-                    .tituloCaja{
-                        @extend%prop-titulo;
-                    }
                 }  
             }
-            .caja2{
+            .servicioIzq{
                 grid-area: caja2;
                 margin: 0% 0% 0% 23% ;
                 flex-direction: row-reverse;
@@ -57,78 +57,25 @@ ESTILOS PAGE SERVICIOS
                 .imgServicio2{
                     width: 30%;
                     border-radius: 0px 20px 20px 0px;
+                    @media screen and (max-width:1024px){
+                        width: 30%;
+                    }
                     @media screen and (max-width:768px){
                         width: 100%;
                         border-radius: 20px 20px 0px 0;
                     }
                 }
-                .tituloTexto{
+                .descripcionServicio{
                     .textoDeCajas{
                         @extend%text-servicios;
                     }
-                    .tituloCaja{
-                       @extend%prop-titulo;
-                    }
                 } 
             }
-            .caja3{
+            .servicioDer--grid{
                 grid-area: caja3;
-                margin: 0% 23% 0% 0px ;
-                @include border(0px);
-                @extend%cajas-general;
-                @media screen and (max-width:1024px){
-                    margin: 0%;
-                    }
-                @media screen and (max-width:768px){
-                    flex-direction: column;
-                    margin: 0%;
-                    }
-                .imgServicio1{
-                    width:30%;
-                    border-radius: 20px 0px 0px 20px;
-                    @media screen and (max-width:768px){
-                        width: 100%;
-                        border-radius: 20px 20px 0px 0;
-                    }
-                }
-                .tituloTexto{
-                    .textoDeCajas{
-                        @extend%text-servicios;
-                    }
-                    .tituloCaja{
-                        @extend%prop-titulo;
-                    }
-                } 
             }
-            .caja4{
+            .servicioIzq--grid{
                 grid-area: caja4;
-                margin: 0% 0% 0% 23% ;
-                flex-direction: row-reverse;
-                @include border(0px);
-                @extend%cajas-general;
-                @media screen and (max-width:1024px){
-                    margin: 0%;
-                }
-                @media screen and (max-width:768px){
-                    flex-direction: column;
-                    margin: 0%;
-                }
-                .imgServicio2{
-                    width: 30%;
-                    border-radius: 0px 20px 20px 0px;
-                    @media screen and (max-width:768px){
-                        width: 100%;
-                        border-radius: 20px 20px 0px 0;
-                        }
-                 }
-                .tituloTexto{
-                    .textoDeCajas{
-                        @extend%text-servicios;
-                    }
-                    .tituloCaja{
-                        @extend%prop-titulo;
-                    }
-                }     
             }
         }
         .imgPresupuesto{ 

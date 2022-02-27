@@ -3,118 +3,107 @@ ESTILOS PAGE NOSOTROS
 --------------------------------------------------------*/
 .container-fluid{
     width: 100%;
-    .main1{
-        grid-area: main;
-        .titulos{
-            grid-area: titulos;
+    .tituloSecundario{
+        margin: 3%;
+        font-size: calc(1.2em + 1vw);
+        @media screen and (max-width:768px){
+            margin: 10%;
         }
-        .titulo2{
-            grid-area: titulo2;
-            font-size: calc(1.2em + 1vw);
-            margin-bottom: 40px;
-            @media screen and (max-width:768px){
-                margin: 10%;
-            }
-        }
-        .historia{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            text-align: center;
-            margin: 0% 0 10% 0;
+    }
+    .historia{
+        margin: 5% auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        .imagen1{
+            width: 50%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             @media screen and (max-width:768px) {
-                flex-direction: column;
-                margin: 2% 0 0% 0;
+                margin-top: 20px;
+                width: 80%;
             }
-            .imagen1{
-                margin-left: 10%; 
-                width: 40%;
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                @media screen and (max-width:768px) {
-                    margin-left: 0%;
+        }
+        .cajaTextosNosotros{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width:768px){
+                flex-direction: column;
+            }
+            p{
+                font-size: calc(0.3em + 1vw);
+                color: rgb(139, 139, 139);
+                text-align: start;
+                width: 60%;
+                margin:5%;
+                @media screen and (max-width:768px){
                     width: 80%;
+                    font-size: 1em;
+                    text-align: start;
+                    margin-top: 30px;
                 }
             }
-            .cajaTextosNosotros{
+        } 
+    }
+    .fondoTexturado{
+        background-color: $background-contacto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 100%;
+        padding: 5% 0 5% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width:768px) {
+            padding-top: 2%;
+        }
+        .carruselPersonal{
+            width: 100%;
+            display: none;
+            @media screen and (max-width:768px) {
+                margin-top: 0px;
+                display: block;
+                margin: 0% auto;
+                width: 70%;
+            }
+        }
+        .personal{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2%;
+            position: relative;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+            .puesto{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin: 0 1% 0 1%;
+                .fotoPersonal{
+                    width: 70%;
+                    margin-bottom: 10%;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    @media screen and (max-width:768px) {
+                        width: 200px;
+                    }
+                }
                 p{
                     font-size: calc(0.3em + 1vw);
-                    color: rgb(139, 139, 139);
-                    text-align: start;
-                    margin:5%;
-                    @media screen and (max-width:768px){
-                        width: 80%;
-                        font-size: 1em;
-                        text-align: center;
-                    }
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 1%;
                 }
-            } 
+                .nombreSector{
+                    color: aqua;
+                    font-size: 800px;
+                }    
+            }
         }
-        .fondoTexturado{
-            background-color: $background-contacto;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            width: 100%;
-            padding: 5% 0 5% 0;
-            background-repeat: no-repeat;
-            background-size: cover;
-            @media screen and (max-width:768px) {
-                padding-top: 2%;
-            }
-            .titulo3{
-                grid-area: titulo3;
-                font-size: calc(1.2em + 1vw);
-                margin: 0% 0 3% 0;
-                color: black;
-                @media screen and (max-width:768px){
-                    margin: 5%;
-                }
-            }
-            .carruselPersonal{
-                width: 100%;
-                display: none;
-                @media screen and (max-width:768px) {
-                    margin-top: 0px;
-                    display: block;
-                }
-            }
-            .personal{
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 2%;
-                position: relative;
-                @media screen and (max-width:768px) {
-                    display: none;
-                }
-                .personal1{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 0 1% 0 1%;
-                    .fotoPersonal{
-                        width: 70%;
-                        margin-bottom: 10%;
-                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                    }
-                    p{
-                        font-size: calc(0.3em + 1vw);
-                        color: black;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        margin: 1%;
-                    }
-                    .nombreSector{
-                        color: aqua;
-                        font-size: 800px;
-                    }    
-                }
-            }
-        }     
-    }           
-}                    
-                   
+    }     
+}                              
+                
                   
                       
                      
