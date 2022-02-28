@@ -317,7 +317,7 @@ ESTILOS PAGE SERVICIOS
   display: grid;
   grid-template-areas: "caja1" "caja2" "caja3" "caja4";
   grid-template-columns: 1fr;
-  grid-gap: 2em;
+  grid-gap: 1rem;
   margin: 5%; }
   .container-fluid main .servicios .servicioDer {
     grid-area: caja1;
