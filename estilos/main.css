@@ -34,14 +34,18 @@
 
 .container-fluid main .cajaClientes .descripcionCliente .clientes p {
   color: white;
-  width: 70%;
+  width: 100%;
   text-align: center;
-  margin: 7% 2%;
+  margin: 8% 2%;
   font-size: calc(0.4em + 1vw); }
   @media screen and (max-width: 768px) {
     .container-fluid main .cajaClientes .descripcionCliente .clientes p {
       width: 80%;
-      font-size: 1rem; } }
+      font-size: 1em; } }
+  @media screen and (max-width: 1024px) {
+    .container-fluid main .cajaClientes .descripcionCliente .clientes p {
+      width: 90%;
+      font-size: 1em; } }
 
 .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
   width: 70%;
@@ -51,24 +55,25 @@
   justify-content: center; }
   @media screen and (max-width: 1024px) {
     .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
-      margin-top: 0%; } }
+      margin-top: 0%;
+      width: 90%; } }
   @media screen and (max-width: 768px) {
     .container-fluid main .cajaClientes .descripcionCliente .clientes .cajaImg {
       width: 80%;
       margin-top: 10%; } }
 
-.container-fluid .contenido2 .servicios .servicioDer, .container-fluid .contenido2 .servicios .servicioIzq {
+.container-fluid main .servicios .servicioDer, .container-fluid main .servicios .servicioIzq {
   display: flex;
   background-color: rgba(204, 204, 255, 0.692);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
 
-.container-fluid .contenido2 .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid .contenido2 .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+.container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
   margin: 0% 10% 5% 10%;
   text-align: center;
   color: black;
   font-size: calc(0.4em + 1vw); }
   @media screen and (max-width: 768px) {
-    .container-fluid .contenido2 .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid .contenido2 .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+    .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
       width: 80%;
       font-size: 1rem; } }
 
@@ -147,10 +152,10 @@ body {
       min-height: 100vh; }
       @media screen and (max-width: 768px) {
         body .container-fluid main {
-          margin-top: 20%; } }
+          margin-top: 75px; } }
       @media screen and (max-width: 480px) {
         body .container-fluid main {
-          margin-top: 25%; } }
+          margin-top: 75px; } }
       body .container-fluid main #tituloPrincipal {
         position: relative;
         text-align: center;
@@ -164,22 +169,19 @@ body {
       body .container-fluid main .tituloSecundario {
         text-align: center;
         color: black;
-        font-size: calc(0.8em + 1vw);
+        font-size: calc(1.5em + 1vw);
         margin: 2%; }
-        @media screen and (max-width: 1024px) {
-          body .container-fluid main .tituloSecundario {
-            font-size: calc(1.2em + 1vw); } }
       body .container-fluid main .subtitulo {
         position: relative;
         color: black;
-        margin: 3% 20% 10% 20%;
+        margin: 3% 15% 10% 15%;
         text-align: center;
         font-size: calc(0.3em + 1vw);
         font-size: calc(0.4em + 1vw); }
         @media screen and (max-width: 768px) {
           body .container-fluid main .subtitulo {
             font-size: 1rem;
-            margin: 2% 5% 5% 5%; } }
+            margin: 5%; } }
 
 /*--------------------------------------------------------
 ESTILOS GENERALES. FOOTER
@@ -204,11 +206,15 @@ footer {
 /*--------------------------------------------------------
 ESTILOS INDEX
 --------------------------------------------------------*/
-.container-fluid main .videosPresentacion > video {
+@media screen and (max-width: 993px) {
+  .container-fluid .contenido1 {
+    margin-top: 77px; } }
+
+.container-fluid .contenido1 .videosPresentacion > video {
   width: 100%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; }
 
-.container-fluid main #tituloHome {
+.container-fluid .contenido1 #tituloHome {
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -314,63 +320,63 @@ ESTILOS PAGE NOSOTROS
 /*--------------------------------------------------------
 ESTILOS PAGE SERVICIOS
 --------------------------------------------------------*/
-.container-fluid .contenido2 .servicios {
+.container-fluid main .servicios {
   display: grid;
   grid-template-areas: "caja1" "caja2" "caja3" "caja4";
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 5%; }
-  .container-fluid .contenido2 .servicios .servicioDer {
+  .container-fluid main .servicios .servicioDer {
     grid-area: caja1;
     margin: 0% 23% 0% 0px;
     border: solid 0px;
     border-radius: 20px; }
     @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .servicios .servicioDer {
+      .container-fluid main .servicios .servicioDer {
         margin: 0%; } }
     @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .servicios .servicioDer {
+      .container-fluid main .servicios .servicioDer {
         flex-direction: column;
         margin: 0%; } }
-    .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
+    .container-fluid main .servicios .servicioDer .imgServicio1 {
       width: 30%;
       border-radius: 20px 0px 0px 20px; }
       @media screen and (max-width: 1024px) {
-        .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
+        .container-fluid main .servicios .servicioDer .imgServicio1 {
           width: 30%; } }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .servicios .servicioDer .imgServicio1 {
+        .container-fluid main .servicios .servicioDer .imgServicio1 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
-  .container-fluid .contenido2 .servicios .servicioIzq {
+  .container-fluid main .servicios .servicioIzq {
     grid-area: caja2;
     margin: 0% 0% 0% 23%;
     flex-direction: row-reverse;
     border: solid 0px;
     border-radius: 20px; }
     @media screen and (max-width: 1024px) {
-      .container-fluid .contenido2 .servicios .servicioIzq {
+      .container-fluid main .servicios .servicioIzq {
         margin: 0%; } }
     @media screen and (max-width: 768px) {
-      .container-fluid .contenido2 .servicios .servicioIzq {
+      .container-fluid main .servicios .servicioIzq {
         flex-direction: column;
         margin: 0%; } }
-    .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
+    .container-fluid main .servicios .servicioIzq .imgServicio2 {
       width: 30%;
       border-radius: 0px 20px 20px 0px; }
       @media screen and (max-width: 1024px) {
-        .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
+        .container-fluid main .servicios .servicioIzq .imgServicio2 {
           width: 30%; } }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido2 .servicios .servicioIzq .imgServicio2 {
+        .container-fluid main .servicios .servicioIzq .imgServicio2 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
-  .container-fluid .contenido2 .servicios .servicioDer--grid {
+  .container-fluid main .servicios .servicioDer--grid {
     grid-area: caja3; }
-  .container-fluid .contenido2 .servicios .servicioIzq--grid {
+  .container-fluid main .servicios .servicioIzq--grid {
     grid-area: caja4; }
 
-.container-fluid .contenido2 .imgPresupuesto {
+.container-fluid main .imgPresupuesto {
   width: 8%;
   position: fixed;
   top: 75%;
@@ -381,7 +387,7 @@ ESTILOS PAGE SERVICIOS
   animation-timing-function: linear;
   animation-direction: alternate; }
   @media screen and (max-width: 768px) {
-    .container-fluid .contenido2 .imgPresupuesto {
+    .container-fluid main .imgPresupuesto {
       width: 25%; } }
 
 @keyframes presupuesto {
@@ -436,35 +442,40 @@ ESTILOS PAGE SERVICIOS
 /*--------------------------------------------------------
 ESTILOS CONTACTO
 --------------------------------------------------------*/
-.container-fluid .contenido4 {
+.container-fluid main {
   grid-area: main;
   display: grid;
   min-height: 50em;
   grid-template-areas: "tituloContacto" "cajaRedes" "cajaFormulario";
   grid-template-columns: 1fr;
   /*ESTILOS FORMULARIO*/ }
-  .container-fluid .contenido4 .tituloContacto {
+  .container-fluid main .tituloContacto {
     grid-area: tituloContacto; }
-    .container-fluid .contenido4 .tituloContacto p {
+    .container-fluid main .tituloContacto p {
       color: black;
       text-align: center;
       margin: 5%;
       font-size: calc(0.8em + 1vw); }
-  .container-fluid .contenido4 .Redes {
+  .container-fluid main .Redes {
     grid-area: cajaRedes;
     background-color: rgba(74, 74, 74, 0.302);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-    .container-fluid .contenido4 .Redes .logos {
+    .container-fluid main .Redes .logos {
       display: flex;
       justify-content: center;
       margin: 3%;
       width: 30%;
       margin-left: 35%; }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido4 .Redes .logos {
+        .container-fluid main .Redes .logos {
           display: flex;
-          flex-direction: column; } }
-      .container-fluid .contenido4 .Redes .logos .logoRedes {
+          flex-direction: column;
+          width: 20%; } }
+      @media screen and (max-width: 1024px) {
+        .container-fluid main .Redes .logos {
+          width: 40%;
+          margin: 0% auto; } }
+      .container-fluid main .Redes .logos .logoRedes {
         text-decoration: none;
         color: black;
         font-size: calc(0.3em + 1vw);
@@ -473,20 +484,20 @@ ESTILOS CONTACTO
         align-items: center;
         margin: 2%; }
         @media screen and (max-width: 768px) {
-          .container-fluid .contenido4 .Redes .logos .logoRedes {
+          .container-fluid main .Redes .logos .logoRedes {
             font-size: 0.8em; } }
-        .container-fluid .contenido4 .Redes .logos .logoRedes img {
-          width: 30%; }
+        .container-fluid main .Redes .logos .logoRedes img {
+          width: 40%; }
           @media screen and (max-width: 768px) {
-            .container-fluid .contenido4 .Redes .logos .logoRedes img {
-              width: 40%; } }
-  .container-fluid .contenido4 .cajaFormulario {
+            .container-fluid main .Redes .logos .logoRedes img {
+              width: 30%; } }
+  .container-fluid main .cajaFormulario {
     grid-area: cajaFormulario;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5%; }
-    .container-fluid .contenido4 .cajaFormulario .formulario {
+    .container-fluid main .cajaFormulario .formulario {
       background-color: rgba(74, 74, 134, 0.719);
       align-items: center;
       width: 50%;
@@ -495,55 +506,56 @@ ESTILOS CONTACTO
       padding: 2%;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
       @media screen and (max-width: 768px) {
-        .container-fluid .contenido4 .cajaFormulario .formulario {
+        .container-fluid main .cajaFormulario .formulario {
           margin-top: 5%;
           width: 100%; } }
-      .container-fluid .contenido4 .cajaFormulario .formulario .tituloFormulario {
+      .container-fluid main .cajaFormulario .formulario .tituloFormulario {
         color: black;
         margin-bottom: 3%;
         font-weight: 200;
         font-size: calc(0.6em + 1vw);
         text-align: center; }
         @media screen and (max-width: 768px) {
-          .container-fluid .contenido4 .cajaFormulario .formulario .tituloFormulario {
-            margin: 5%; } }
-      .container-fluid .contenido4 .cajaFormulario .formulario fieldset label {
+          .container-fluid main .cajaFormulario .formulario .tituloFormulario {
+            margin: 5%;
+            font-size: calc(0.8em + 1vw); } }
+      .container-fluid main .cajaFormulario .formulario fieldset label {
         font-size: calc(0.4em + 1vw); }
         @media screen and (max-width: 768px) {
-          .container-fluid .contenido4 .cajaFormulario .formulario fieldset label {
+          .container-fluid main .cajaFormulario .formulario fieldset label {
             font-size: 1em; } }
-      .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente {
+      .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente {
         display: flex;
         align-items: center; }
         @media screen and (max-width: 480px) {
-          .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente {
+          .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente {
             margin: 2% 0 5% 0; } }
-        .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
+        .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
           margin: 3% 4% 3% 0%;
           font-size: calc(0.1em + 1vw); }
           @media screen and (max-width: 768px) {
-            .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
+            .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
               font-size: 1em; } }
-        .container-fluid .contenido4 .cajaFormulario .formulario fieldset .tipoCliente select {
+        .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente select {
           margin-left: 4%; }
-      .container-fluid .contenido4 .cajaFormulario .formulario fieldset .textarea {
+      .container-fluid main .cajaFormulario .formulario fieldset .textarea {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .container-fluid .contenido4 .cajaFormulario .formulario fieldset .textarea h4 {
+        .container-fluid main .cajaFormulario .formulario fieldset .textarea h4 {
           font-size: calc(0.5em + 1vw);
           font-weight: 100;
           text-align: center; }
-      .container-fluid .contenido4 .cajaFormulario .formulario fieldset .terminosYcondiciones {
+      .container-fluid main .cajaFormulario .formulario fieldset .terminosYcondiciones {
         display: flex;
         justify-content: center;
         margin: 2%; }
-        .container-fluid .contenido4 .cajaFormulario .formulario fieldset .terminosYcondiciones input {
+        .container-fluid main .cajaFormulario .formulario fieldset .terminosYcondiciones input {
           margin: 6px; }
-      .container-fluid .contenido4 .cajaFormulario .formulario fieldset .botones {
+      .container-fluid main .cajaFormulario .formulario fieldset .botones {
         display: flex;
         justify-content: center; }
-        .container-fluid .contenido4 .cajaFormulario .formulario fieldset .botones .boton {
+        .container-fluid main .cajaFormulario .formulario fieldset .botones .boton {
           padding: 1%;
           border-radius: 10px;
           background-color: white;

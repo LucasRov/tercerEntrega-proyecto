@@ -39,13 +39,17 @@
 }
 %texto-cliente{
     color: white;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    margin: 7% 2%;
+    margin: 8% 2%;
     font-size: calc(0.4em + 1vw);
     @media screen and (max-width:768px){
         width: 80%;
-        font-size: 1rem;
+        font-size: 1em;
+    }
+    @media screen and (max-width:1024px){
+        width: 90%;
+        font-size: 1em;
     }
 }
 %caja-imagenes{
@@ -56,6 +60,7 @@
     justify-content: center;
     @media screen and (max-width:1024px){
         margin-top:0%;
+        width: 90%;
     }
     @media screen and (max-width:768px){
         width: 80%;

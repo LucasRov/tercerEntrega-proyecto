@@ -5,7 +5,7 @@ ESTILOS CONTACTO
 --------------------------------------------------------*/
 
 .container-fluid{
-    .contenido4{
+    main{
         grid-area: main;
         display: grid;
         min-height: 50em;
@@ -35,6 +35,11 @@ ESTILOS CONTACTO
                 @media screen and (max-width:768px){
                     display: flex;
                     flex-direction: column;
+                    width: 20%;
+                }
+                @media screen and (max-width:1024px){
+                    width: 40%;
+                    margin: 0% auto;
                 }
                 .logoRedes{
                     text-decoration: none;
@@ -48,9 +53,9 @@ ESTILOS CONTACTO
                         font-size: 0.8em
                         }
                     img{
-                        width: 30%;
+                        width: 40%;
                         @media screen and (max-width:768px){
-                            width: 40%;
+                            width: 30%;
                         }
                     }
                 }
@@ -85,6 +90,7 @@ ESTILOS CONTACTO
                     text-align: center;
                     @media screen and (max-width:768px){
                         margin: 5%;
+                        font-size: calc(0.8em + 1vw);
                     }
                 }
                 fieldset{
