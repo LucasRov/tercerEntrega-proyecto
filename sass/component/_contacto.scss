@@ -8,7 +8,6 @@ ESTILOS CONTACTO
     main{
         grid-area: main;
         display: grid;
-        min-height: 50em;
         grid-template-areas: "tituloContacto"
                                 "cajaRedes"
                                 "cajaFormulario";
@@ -25,7 +24,7 @@ ESTILOS CONTACTO
         .Redes{
             grid-area: cajaRedes;
             background-color: $gris-fondo;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: $box-shadow;
             .logos{
                 display: flex;
                 justify-content: center;
@@ -77,7 +76,7 @@ ESTILOS CONTACTO
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 border-radius: 20px;
                 padding: 2%;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                box-shadow: $box-shadow;
                 @media screen and (max-width:768px){
                     margin-top: 5%;
                     width: 100%;

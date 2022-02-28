@@ -10,7 +10,7 @@
     margin: 2% auto;
     width: 80%;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    box-shadow: $box-shadow;
 }
 %media-clientes{
     @media screen and (max-width:1024px){
@@ -29,7 +29,7 @@
     width: 30%;
     position: absolute;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: $box-shadow;
 }
 
 %imagen-secundaria{
@@ -73,7 +73,7 @@
 %cajas-general{
     display: flex;
     background-color: rgba(204, 204, 255, 0.692);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: $box-shadow;
 }
 
 %text-servicios{

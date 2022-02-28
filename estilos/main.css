@@ -7,7 +7,7 @@
   margin: 2% auto;
   width: 80%;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; }
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 @media screen and (max-width: 1024px) {
   .container-fluid main .cajaClientes .descripcionCliente .clientes {
@@ -65,7 +65,7 @@
 .container-fluid main .servicios .servicioDer, .container-fluid main .servicios .servicioIzq {
   display: flex;
   background-color: rgba(204, 204, 255, 0.692);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
   margin: 0% 10% 5% 10%;
@@ -212,7 +212,7 @@ ESTILOS INDEX
 
 .container-fluid .contenido1 .videosPresentacion > video {
   width: 100%;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; }
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .container-fluid .contenido1 #tituloHome {
   position: relative;
@@ -227,95 +227,88 @@ ESTILOS INDEX
 /*--------------------------------------------------------
 ESTILOS PAGE NOSOTROS
 --------------------------------------------------------*/
-.container-fluid {
-  width: 100%; }
-  .container-fluid .tituloSecundario {
-    margin: 3%;
-    font-size: calc(1.2em + 1vw); }
+.container-fluid .historia {
+  margin: 5% auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white; }
+  .container-fluid .historia .imagen1 {
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
     @media screen and (max-width: 768px) {
-      .container-fluid .tituloSecundario {
-        margin: 10%; } }
-  .container-fluid .historia {
-    margin: 5% auto;
-    width: 90%;
+      .container-fluid .historia .imagen1 {
+        margin-top: 20px;
+        width: 80%; } }
+  .container-fluid .historia .cajaTextosNosotros {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white; }
-    .container-fluid .historia .imagen1 {
-      width: 50%;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .historia .imagen1 {
-          margin-top: 20px;
-          width: 80%; } }
-    .container-fluid .historia .cajaTextosNosotros {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .historia .cajaTextosNosotros {
-          flex-direction: column; } }
-      .container-fluid .historia .cajaTextosNosotros p {
-        font-size: calc(0.3em + 1vw);
-        color: #8b8b8b;
-        text-align: start;
-        width: 60%;
-        margin: 5%; }
-        @media screen and (max-width: 768px) {
-          .container-fluid .historia .cajaTextosNosotros p {
-            width: 80%;
-            font-size: 1em;
-            text-align: start;
-            margin-top: 30px; } }
-  .container-fluid .fondoTexturado {
-    background-color: rgba(74, 74, 134, 0.719);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
-    padding: 5% 0 5% 0;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    flex-direction: row;
+    align-items: center; }
     @media screen and (max-width: 768px) {
-      .container-fluid .fondoTexturado {
-        padding-top: 2%; } }
-    .container-fluid .fondoTexturado .carruselPersonal {
-      width: 100%;
-      display: none; }
+      .container-fluid .historia .cajaTextosNosotros {
+        flex-direction: column; } }
+    .container-fluid .historia .cajaTextosNosotros p {
+      font-size: calc(0.3em + 1vw);
+      color: #8b8b8b;
+      text-align: start;
+      width: 60%;
+      margin: 5%; }
       @media screen and (max-width: 768px) {
-        .container-fluid .fondoTexturado .carruselPersonal {
-          margin-top: 0px;
-          display: block;
-          margin: 0% auto;
-          width: 70%; } }
-    .container-fluid .fondoTexturado .personal {
+        .container-fluid .historia .cajaTextosNosotros p {
+          width: 80%;
+          font-size: 1em;
+          text-align: start;
+          margin-top: 30px; } }
+
+.container-fluid .fondoTexturado {
+  background-color: rgba(74, 74, 134, 0.719);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  padding: 5% 0 5% 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .container-fluid .fondoTexturado {
+      padding-top: 2%; } }
+  .container-fluid .fondoTexturado .carruselPersonal {
+    width: 100%;
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .container-fluid .fondoTexturado .carruselPersonal {
+        margin-top: 0px;
+        display: block;
+        margin: 0% auto;
+        width: 70%; } }
+  .container-fluid .fondoTexturado .personal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .container-fluid .fondoTexturado .personal {
+        display: none; } }
+    .container-fluid .fondoTexturado .personal .puesto {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 2%;
-      position: relative; }
-      @media screen and (max-width: 768px) {
-        .container-fluid .fondoTexturado .personal {
-          display: none; } }
-      .container-fluid .fondoTexturado .personal .puesto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 1% 0 1%; }
-        .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
-          width: 70%;
-          margin-bottom: 10%;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-          @media screen and (max-width: 768px) {
-            .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
-              width: 200px; } }
-        .container-fluid .fondoTexturado .personal .puesto p {
-          font-size: calc(0.3em + 1vw);
-          color: black;
-          text-transform: uppercase;
-          font-weight: 600;
-          margin: 1%; }
-        .container-fluid .fondoTexturado .personal .puesto .nombreSector {
-          color: aqua;
-          font-size: 800px; }
+      flex-direction: column;
+      align-items: center;
+      margin: 0 1% 0 1%; }
+      .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
+        width: 70%;
+        margin-bottom: 10%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+        @media screen and (max-width: 768px) {
+          .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
+            width: 200px; } }
+      .container-fluid .fondoTexturado .personal .puesto p {
+        font-size: calc(0.3em + 1vw);
+        color: black;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 1%; }
+      .container-fluid .fondoTexturado .personal .puesto .nombreSector {
+        color: aqua;
+        font-size: 800px; }
 
 /*--------------------------------------------------------
 ESTILOS PAGE SERVICIOS
@@ -324,7 +317,7 @@ ESTILOS PAGE SERVICIOS
   display: grid;
   grid-template-areas: "caja1" "caja2" "caja3" "caja4";
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2em;
   margin: 5%; }
   .container-fluid main .servicios .servicioDer {
     grid-area: caja1;
@@ -445,7 +438,6 @@ ESTILOS CONTACTO
 .container-fluid main {
   grid-area: main;
   display: grid;
-  min-height: 50em;
   grid-template-areas: "tituloContacto" "cajaRedes" "cajaFormulario";
   grid-template-columns: 1fr;
   /*ESTILOS FORMULARIO*/ }
@@ -459,7 +451,7 @@ ESTILOS CONTACTO
   .container-fluid main .Redes {
     grid-area: cajaRedes;
     background-color: rgba(74, 74, 74, 0.302);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
     .container-fluid main .Redes .logos {
       display: flex;
       justify-content: center;
@@ -504,7 +496,7 @@ ESTILOS CONTACTO
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       border-radius: 20px;
       padding: 2%;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
       @media screen and (max-width: 768px) {
         .container-fluid main .cajaFormulario .formulario {
           margin-top: 5%;
