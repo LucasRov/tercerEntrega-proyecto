@@ -512,7 +512,7 @@ ESTILOS CONTACTO
       .container-fluid main .cajaFormulario .formulario .tituloFormulario {
         color: black;
         margin-bottom: 3%;
-        font-weight: 200;
+        font-weight: 500;
         font-size: calc(0.6em + 1vw);
         text-align: center; }
         @media screen and (max-width: 768px) {
