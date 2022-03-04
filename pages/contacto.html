@@ -28,101 +28,96 @@
 
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid ">
-                    <a class="navbar-brand" href="../index.html"><img class="logo" src="https://drive.google.com/uc?export=download&id=13QzBO93rdORw0iCUZQOHsCWp3RDUOdgZ" alt="Logo de Linear"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active fs-6"  aria-current="page" href="./nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active fs-6" href="./servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active fs-6" href="./nuestrosClientes.html">Nuestros clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active fs-6" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header class="navContacto">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="https://drive.google.com/uc?export=download&id=13QzBO93rdORw0iCUZQOHsCWp3RDUOdgZ" alt="Logo de Linear"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6"  aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6" href="./nuestrosClientes.html">Nuestros clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="tituloContacto">
-                <h1 id="tituloPrincipal">Contacto</h1>              
-                <p>
-                    Dejá tu consulta y nos pondremos en contacto.
-                </p>
-                <p class="subtitulo">
-                    Contanos en que podemos ayudarte y armamos un presupuesto acorde a tu proyecto.
-                </p>
-            </section>
-
-            <!--redes sociales-->
-
-            <section class="Redes">
-                <h2 class="tituloSecundario">Visita nuestras redes</h2>
-                <div class="logos">
-                    <a class="logoRedes"href="https://www.facebook.com/" target="_blank" ><img src="https://drive.google.com/uc?export=download&id=1kyhQ54DeRpXH4EE76QADJ5c8BSTiJFUJ" alt="logo facebook" >Facebook</a>
-                    <a class="logoRedes" href="https://www.instagram.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1T8RvaKNs6NIa7lXPavxVtZV0ZXaHYhMx" alt="logo instagram">Instagram</a>
-                    <a class="logoRedes" href="https://ar.linkedin.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1JJUE7yxBt0YNrIggjMLLns5mgYkMif9l" alt="logo likedin">Linkedin</a>
-                </div>
-            </section>
-
-            <!--formulario-->
-            
-            <section class="cajaFormulario">
-                <form  class="formulario" name="formulario">
-                    <p class="tituloFormulario">Dejá tu mensaje y nos pondremos <br> en contacto a la brevedad</p>
-                    <fieldset>
-                        <div>
-                            <label for="nombre_apellido">Nombre y apellido</label>
-                            <input type="text" name="nombre_apellido"/>
-                        </div>
-                        <div>
-                            <label for="email"> Completa tu email</label>
-                            <input type="email" required placeholder=" ejemplo@lineal.com">
-                        </div>
-                        <div class="tipoCliente">
-                            <p class="textoTipo">Tipo de cliente</p>
-                            <select name="tamaño">
-                                <option value="personal">Personal</option>
-                                <option value="empresa">Empresa</option>
-                                <option value="Org sin lucro">Org. sin lucro</option>
-                            </select>
-                        </div>
-                        <div class="textarea">
-                            <form action="">
-                            <textarea name="En que podemos ayudarte" cols="1em" rows="8em"></textarea>
-                        </div>
-                        <div class="terminosYcondiciones">
-                            <p> Acepta términos y condiciones</p>
-                            <input type="Checkbox" name="Acepta" value="1"/>
-                        </div>
-                        <div class="botones"> 
-                             <input class="boton" type="submit" value="Enviar Formulario"/>
-                        </div>
-                    </fieldset>
-                </form>
             </div>
-        </main>
-        <footer>
-            <p class="derechos">Todos los derechos reservados 2022 - LINEAR - Lucas Rovere</p>
-        </footer>
-    </div>
+        </nav>
+    </header>
+    <main class="contenidoContacto">
+        <section class="tituloContacto">
+            <h1 id="tituloPrincipal">Contacto</h1>              
+            <p>
+                Dejá tu consulta y nos pondremos en contacto.
+            </p>
+            <p class="subtitulo">
+                Contanos en que podemos ayudarte y armamos un presupuesto acorde a tu proyecto.
+            </p>
+        </section>
 
+        <!--redes sociales-->
 
+        <section class="Redes">
+            <h2 class="tituloSecundario">Visita nuestras redes</h2>
+            <div class="logos">
+                <a class="logoRedes"href="https://www.facebook.com/" target="_blank" ><img src="https://drive.google.com/uc?export=download&id=1kyhQ54DeRpXH4EE76QADJ5c8BSTiJFUJ" alt="logo facebook" >Facebook</a>
+                <a class="logoRedes" href="https://www.instagram.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1T8RvaKNs6NIa7lXPavxVtZV0ZXaHYhMx" alt="logo instagram">Instagram</a>
+                <a class="logoRedes" href="https://ar.linkedin.com/" target="_blank"><img src="https://drive.google.com/uc?export=download&id=1JJUE7yxBt0YNrIggjMLLns5mgYkMif9l" alt="logo likedin">Linkedin</a>
+            </div>
+        </section>
 
-
-
+        <!--formulario-->
+        
+        <section class="cajaFormulario">
+            <form  class="formulario" name="formulario">
+                <p class="tituloFormulario">Dejá tu mensaje y nos pondremos <br> en contacto a la brevedad</p>
+                <fieldset>
+                    <div>
+                        <label for="nombre_apellido">Nombre y apellido</label>
+                        <input type="text" name="nombre_apellido"
+                        required placeholder=" nombre"/>
+                    </div>
+                    <div>
+                        <label for="email"> Completa tu email</label>
+                        <input type="email" required placeholder=" ejemplo@lineal.com">
+                    </div>
+                    <div class="tipoCliente">
+                        <p class="textoTipo">Tipo de cliente</p>
+                        <select name="tamaño">
+                            <option value="personal">Personal</option>
+                            <option value="empresa">Empresa</option>
+                            <option value="Org sin lucro">Org. sin lucro</option>
+                        </select>
+                    </div>
+                    <div class="textarea">
+                        <form action="">
+                        <textarea name="En que podemos ayudarte" cols="1em" rows="8em"
+                        required placeholder=" Dejá tu comentario..."></textarea>
+                    </div>
+                    <div class="terminosYcondiciones">
+                        <p> Acepta términos y condiciones</p>
+                        <input type="Checkbox" name="Acepta" value="1"/>
+                    </div>
+                    <div class="botones"> 
+                            <input class="boton" type="submit" value="Enviar Formulario"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="derechos">Todos los derechos reservados 2022 - LINEAR - Lucas Rovere</p>
+    </footer> 
 
     <!--    LINK JS BOOSTRAP     -->
 

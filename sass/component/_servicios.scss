@@ -38,6 +38,12 @@ ESTILOS PAGE SERVICIOS
                 .descripcionServicio{
                     .textoDeCajas{
                         @extend%text-servicios;
+                        @media screen and (max-width:1024px){
+                            font-size: calc(0.4em + 1vw);
+                        }
+                        @media screen and (max-width:768px){
+                            font-size: calc(0.6em + 1vw);
+                        }
                     }
                 }  
             }
@@ -68,6 +74,12 @@ ESTILOS PAGE SERVICIOS
                 .descripcionServicio{
                     .textoDeCajas{
                         @extend%text-servicios;
+                        @media screen and (max-width:1024px){
+                            font-size: calc(0.4em + 1vw);
+                        }
+                        @media screen and (max-width:768px){
+                            font-size: calc(0.6em + 1vw);
+                        }
                     }
                 } 
             }

@@ -5,13 +5,16 @@ ESTILOS PAGE NOSOTROS
 
 .container-fluid{
     .historia{
+        background-color: rgb(232, 226, 255);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin: 5% auto;
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: white;
         .imagen1{
+            margin: 0% 0% 2% 2%;
             width: 50%;
             box-shadow: $box-shadow;
             @media screen and (max-width:768px) {
@@ -28,10 +31,10 @@ ESTILOS PAGE NOSOTROS
             }
             p{
                 font-size: calc(0.3em + 1vw);
-                color: rgb(139, 139, 139);
+                color: $text-black;
                 text-align: start;
                 width: 60%;
-                margin:5%;
+                margin:2%;
                 @media screen and (max-width:768px){
                     width: 80%;
                     font-size: 1em;
@@ -60,11 +63,15 @@ ESTILOS PAGE NOSOTROS
                 margin: 0% auto;
                 width: 70%;
             }
+            .nombreSector{
+                background-color: black;
+                margin: 0%;
+            }
         }
         .personal{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 2%;
+            margin: 2%;
             position: relative;
             @media screen and (max-width:768px) {
                 display: none;
@@ -75,7 +82,7 @@ ESTILOS PAGE NOSOTROS
                 align-items: center;
                 margin: 0 1% 0 1%;
                 .fotoPersonal{
-                    width: 70%;
+                    width: 80%;
                     margin-bottom: 10%;
                     box-shadow: $box-shadow;
                     @media screen and (max-width:768px) {
@@ -89,10 +96,6 @@ ESTILOS PAGE NOSOTROS
                     font-weight: 600;
                     margin: 1%;
                 }
-                .nombreSector{
-                    color: aqua;
-                    font-size: 800px;
-                }    
             }
         }
     }     

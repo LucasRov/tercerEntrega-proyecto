@@ -33,7 +33,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .container-fluid main .cajaClientes .descripcionCliente .clientes p {
-  color: white;
+  color: black;
   width: 100%;
   text-align: center;
   margin: 8% 2%;
@@ -68,14 +68,15 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
-  margin: 0% 10% 5% 10%;
+  margin: 5% 3%;
   text-align: center;
   color: black;
-  font-size: calc(0.4em + 1vw); }
+  font-size: calc(0.3em + 1vw); }
   @media screen and (max-width: 768px) {
     .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas, .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+      margin: 0% 10% 5% 10%;
       width: 80%;
-      font-size: 1rem; } }
+      font-size: calc(0.6em + 1vw); } }
 
 /*--------------------------------------------------------
 ESTILOS GENERALES. MENÚ
@@ -120,7 +121,7 @@ header .navbar {
     header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
       border-radius: 0px;
       background-color: none;
-      color: white;
+      color: black;
       text-transform: uppercase;
       font-weight: 600; }
       @media screen and (max-width: 992px) {
@@ -170,7 +171,7 @@ body {
         text-align: center;
         color: black;
         font-size: calc(1.5em + 1vw);
-        margin: 2%; }
+        margin: 2% auto; }
       body .container-fluid main .subtitulo {
         position: relative;
         color: black;
@@ -201,7 +202,7 @@ footer {
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 0%;
-  color: white; }
+  color: black; }
 
 /*--------------------------------------------------------
 ESTILOS INDEX
@@ -228,13 +229,16 @@ ESTILOS INDEX
 ESTILOS PAGE NOSOTROS
 --------------------------------------------------------*/
 .container-fluid .historia {
+  background-color: #e8e2ff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 5% auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white; }
   .container-fluid .historia .imagen1 {
+    margin: 0% 0% 2% 2%;
     width: 50%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
     @media screen and (max-width: 768px) {
@@ -250,10 +254,10 @@ ESTILOS PAGE NOSOTROS
         flex-direction: column; } }
     .container-fluid .historia .cajaTextosNosotros p {
       font-size: calc(0.3em + 1vw);
-      color: #8b8b8b;
+      color: black;
       text-align: start;
       width: 60%;
-      margin: 5%; }
+      margin: 2%; }
       @media screen and (max-width: 768px) {
         .container-fluid .historia .cajaTextosNosotros p {
           width: 80%;
@@ -262,7 +266,7 @@ ESTILOS PAGE NOSOTROS
           margin-top: 30px; } }
 
 .container-fluid .fondoTexturado {
-  background-color: rgba(74, 74, 134, 0.719);
+  background-color: rgba(182, 182, 229, 0.719);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%;
   padding: 5% 0 5% 0;
@@ -280,10 +284,13 @@ ESTILOS PAGE NOSOTROS
         display: block;
         margin: 0% auto;
         width: 70%; } }
+    .container-fluid .fondoTexturado .carruselPersonal .nombreSector {
+      background-color: black;
+      margin: 0%; }
   .container-fluid .fondoTexturado .personal {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2%;
+    margin: 2%;
     position: relative; }
     @media screen and (max-width: 768px) {
       .container-fluid .fondoTexturado .personal {
@@ -294,7 +301,7 @@ ESTILOS PAGE NOSOTROS
       align-items: center;
       margin: 0 1% 0 1%; }
       .container-fluid .fondoTexturado .personal .puesto .fotoPersonal {
-        width: 70%;
+        width: 80%;
         margin-bottom: 10%;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
         @media screen and (max-width: 768px) {
@@ -306,9 +313,6 @@ ESTILOS PAGE NOSOTROS
         text-transform: uppercase;
         font-weight: 600;
         margin: 1%; }
-      .container-fluid .fondoTexturado .personal .puesto .nombreSector {
-        color: aqua;
-        font-size: 800px; }
 
 /*--------------------------------------------------------
 ESTILOS PAGE SERVICIOS
@@ -341,6 +345,12 @@ ESTILOS PAGE SERVICIOS
         .container-fluid main .servicios .servicioDer .imgServicio1 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
+    @media screen and (max-width: 1024px) {
+      .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas {
+        font-size: calc(0.4em + 1vw); } }
+    @media screen and (max-width: 768px) {
+      .container-fluid main .servicios .servicioDer .descripcionServicio .textoDeCajas {
+        font-size: calc(0.6em + 1vw); } }
   .container-fluid main .servicios .servicioIzq {
     grid-area: caja2;
     margin: 0% 0% 0% 23%;
@@ -364,6 +374,12 @@ ESTILOS PAGE SERVICIOS
         .container-fluid main .servicios .servicioIzq .imgServicio2 {
           width: 100%;
           border-radius: 20px 20px 0px 0; } }
+    @media screen and (max-width: 1024px) {
+      .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+        font-size: calc(0.4em + 1vw); } }
+    @media screen and (max-width: 768px) {
+      .container-fluid main .servicios .servicioIzq .descripcionServicio .textoDeCajas {
+        font-size: calc(0.6em + 1vw); } }
   .container-fluid main .servicios .servicioDer--grid {
     grid-area: caja3; }
   .container-fluid main .servicios .servicioIzq--grid {
@@ -435,39 +451,57 @@ ESTILOS PAGE SERVICIOS
 /*--------------------------------------------------------
 ESTILOS CONTACTO
 --------------------------------------------------------*/
-.container-fluid main {
+.navContacto .navbar {
+  top: 0%; }
+
+.contenidoContacto {
   grid-area: main;
   display: grid;
   grid-template-areas: "tituloContacto" "cajaRedes" "cajaFormulario";
   grid-template-columns: 1fr;
   /*ESTILOS FORMULARIO*/ }
-  .container-fluid main .tituloContacto {
+  .contenidoContacto .tituloContacto {
     grid-area: tituloContacto; }
-    .container-fluid main .tituloContacto p {
+    .contenidoContacto .tituloContacto h1 {
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: 150px;
+      letter-spacing: 5px;
+      font-size: calc(1.9em + 1vw);
+      color: #1229fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .contenidoContacto .tituloContacto p {
       color: black;
       text-align: center;
       margin: 5%;
       font-size: calc(0.8em + 1vw); }
-  .container-fluid main .Redes {
+  .contenidoContacto .Redes {
     grid-area: cajaRedes;
     background-color: rgba(74, 74, 74, 0.302);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-    .container-fluid main .Redes .logos {
+    .contenidoContacto .Redes h2 {
+      text-align: center;
+      color: black;
+      font-size: calc(1.5em + 1vw);
+      margin: 2% auto; }
+    .contenidoContacto .Redes .logos {
       display: flex;
       justify-content: center;
       margin: 3%;
       width: 30%;
       margin-left: 35%; }
       @media screen and (max-width: 768px) {
-        .container-fluid main .Redes .logos {
+        .contenidoContacto .Redes .logos {
           display: flex;
           flex-direction: column;
           width: 20%; } }
       @media screen and (max-width: 1024px) {
-        .container-fluid main .Redes .logos {
+        .contenidoContacto .Redes .logos {
           width: 40%;
           margin: 0% auto; } }
-      .container-fluid main .Redes .logos .logoRedes {
+      .contenidoContacto .Redes .logos .logoRedes {
         text-decoration: none;
         color: black;
         font-size: calc(0.3em + 1vw);
@@ -476,21 +510,21 @@ ESTILOS CONTACTO
         align-items: center;
         margin: 2%; }
         @media screen and (max-width: 768px) {
-          .container-fluid main .Redes .logos .logoRedes {
+          .contenidoContacto .Redes .logos .logoRedes {
             font-size: 0.8em; } }
-        .container-fluid main .Redes .logos .logoRedes img {
+        .contenidoContacto .Redes .logos .logoRedes img {
           width: 40%; }
           @media screen and (max-width: 768px) {
-            .container-fluid main .Redes .logos .logoRedes img {
+            .contenidoContacto .Redes .logos .logoRedes img {
               width: 30%; } }
-  .container-fluid main .cajaFormulario {
+  .contenidoContacto .cajaFormulario {
     grid-area: cajaFormulario;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5%; }
-    .container-fluid main .cajaFormulario .formulario {
-      background-color: rgba(74, 74, 134, 0.719);
+    .contenidoContacto .cajaFormulario .formulario {
+      background-color: rgba(182, 182, 229, 0.719);
       align-items: center;
       width: 50%;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -498,56 +532,56 @@ ESTILOS CONTACTO
       padding: 2%;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
       @media screen and (max-width: 768px) {
-        .container-fluid main .cajaFormulario .formulario {
+        .contenidoContacto .cajaFormulario .formulario {
           margin-top: 5%;
           width: 100%; } }
-      .container-fluid main .cajaFormulario .formulario .tituloFormulario {
+      .contenidoContacto .cajaFormulario .formulario .tituloFormulario {
         color: black;
         margin-bottom: 3%;
         font-weight: 500;
         font-size: calc(0.6em + 1vw);
         text-align: center; }
         @media screen and (max-width: 768px) {
-          .container-fluid main .cajaFormulario .formulario .tituloFormulario {
+          .contenidoContacto .cajaFormulario .formulario .tituloFormulario {
             margin: 5%;
             font-size: calc(0.8em + 1vw); } }
-      .container-fluid main .cajaFormulario .formulario fieldset label {
+      .contenidoContacto .cajaFormulario .formulario fieldset label {
         font-size: calc(0.4em + 1vw); }
         @media screen and (max-width: 768px) {
-          .container-fluid main .cajaFormulario .formulario fieldset label {
+          .contenidoContacto .cajaFormulario .formulario fieldset label {
             font-size: 1em; } }
-      .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente {
+      .contenidoContacto .cajaFormulario .formulario fieldset .tipoCliente {
         display: flex;
         align-items: center; }
         @media screen and (max-width: 480px) {
-          .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente {
+          .contenidoContacto .cajaFormulario .formulario fieldset .tipoCliente {
             margin: 2% 0 5% 0; } }
-        .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
+        .contenidoContacto .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
           margin: 3% 4% 3% 0%;
           font-size: calc(0.1em + 1vw); }
           @media screen and (max-width: 768px) {
-            .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
+            .contenidoContacto .cajaFormulario .formulario fieldset .tipoCliente .textoTipo {
               font-size: 1em; } }
-        .container-fluid main .cajaFormulario .formulario fieldset .tipoCliente select {
+        .contenidoContacto .cajaFormulario .formulario fieldset .tipoCliente select {
           margin-left: 4%; }
-      .container-fluid main .cajaFormulario .formulario fieldset .textarea {
+      .contenidoContacto .cajaFormulario .formulario fieldset .textarea {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .container-fluid main .cajaFormulario .formulario fieldset .textarea h4 {
+        .contenidoContacto .cajaFormulario .formulario fieldset .textarea h4 {
           font-size: calc(0.5em + 1vw);
           font-weight: 100;
           text-align: center; }
-      .container-fluid main .cajaFormulario .formulario fieldset .terminosYcondiciones {
+      .contenidoContacto .cajaFormulario .formulario fieldset .terminosYcondiciones {
         display: flex;
         justify-content: center;
         margin: 2%; }
-        .container-fluid main .cajaFormulario .formulario fieldset .terminosYcondiciones input {
+        .contenidoContacto .cajaFormulario .formulario fieldset .terminosYcondiciones input {
           margin: 6px; }
-      .container-fluid main .cajaFormulario .formulario fieldset .botones {
+      .contenidoContacto .cajaFormulario .formulario fieldset .botones {
         display: flex;
         justify-content: center; }
-        .container-fluid main .cajaFormulario .formulario fieldset .botones .boton {
+        .contenidoContacto .cajaFormulario .formulario fieldset .botones .boton {
           padding: 1%;
           border-radius: 10px;
           background-color: white;
